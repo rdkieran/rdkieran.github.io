@@ -1,7 +1,6 @@
 html, body {
     height: 100%;
     width: 60%;
-    min-width:500px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 20px;
     padding-top:20px
@@ -15,15 +14,14 @@ body {
     vertical-align: middle;
 }
 
-.details, .main{
-    line-height: 7px;
+
+/* HEADER */
+header{
     text-align:center;
-    padding: 3px;
-}
-.details-2{
-    line-height: 7px;
 }
 
+
+/* TABLES AND CELLS */
 table, th, td {
     border: 1px solid;
     border-collapse: collapse;
@@ -35,14 +33,17 @@ table{
     table-layout: fixed;
 }
 th{
+    height:30px;
+    overflow: hidden;
     background-color:rgba(0, 0, 0, 0.2);
 }
-th, td{
+td{
     height:30px;
     overflow: hidden;
 }
 
 
+/* <h1>, <h2>, <h3> */
 h1, h2{
     border-bottom: 2px rgba(0, 0, 0, 0.2) solid;
 }
@@ -50,10 +51,17 @@ h1{
     text-align:center;
 }
 
-.description{
+
+/* <p> CLASSES */
+.indented{
     padding-left: 40px;
 }
+.title-details{
+    line-height: 5px;
+}
 
+
+/* HYPERLINK STYLING */
 a{
     text-decoration:none;
 }
