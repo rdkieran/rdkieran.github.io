@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Robbie Kieran CV</title>
+        <style>
+            html, body {
+                height: 100%;
+                width: 800px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding-bottom: 20px;
+                padding-top:20px
+            }
+            html {
+                display: table;
+                margin: auto;
+            }
+            body {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .details, main{
+                line-height: 5px;
+                text-align:center;
+            }
+            .details-2{
+                line-height: 5px;
+            }
+
+            table, th, td {
+                border: 1px solid;
+                border-collapse: collapse;
+                padding:7px;
+            }
+            table{
+                width: 100%;
+                table-layout: fixed;
+            }
+            th{
+                background-color:rgba(0, 0, 0, 0.2);
+            }
+            th,tr{
+                height:30px;
+            }
+
+
+            h1, h2{
+                border-bottom: 2px rgba(0, 0, 0, 0.2) solid;
+            }
+            h1{
+                text-align:center;
+            }
+
+            .description{
+                padding-left: 40px;
+            }
+
+            a{
+                text-decoration:none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <h1 id="robbie-kieran">Robbie Kieran</h1>
+            <div class="details">
+                <h4 id="contact">Contact</h4>
+                <p><a target="_blank" href="https://www.linkedin.com/in/rdkieran/"><img src="linkedin.svg"></a> <a target="_blank" href="mailto:rdkieran.illu@gmail.com"><img src="email.svg"></a>
+                <a target="_blank" href="https://github.com/rdkieran"><img src="github.svg"></a></p>
+            </div>
+            <div class="details">
+                <h4 id="navigation">Navigation</h4>
+                <p><a href="#skills">Skills</a> | <a href="#projects">Projects</a> | <a href="#work-history">Work History</a> | <a href="#education">Education</a> | <a href="#interests">Interests</a></p>
+            </div>
+
+            <div>
+                <h2 id="skills">Skills</h2>
+                <table>
+                    <tr>
+                        <th>Languages</th>
+                        <td>Python</td><td>HTML</td><td>CSS</td><td> </td><td> </td><td> </td>
+                    </tr>
+                    <tr>
+                        <th>Technologies</th>
+                        <td>VSCode</td><td>Git</td><td> </td><td> </td><td> </td><td> </td>
+                    </tr>
+                    <tr>
+                        <th>Key Skills</th>
+                        <td>Teamworking</td><td>Communication</td><td>Adaptability</td><td>Time management</td><td>Problem solving</td><td>Analytical thinking</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <h2 id="projects">Projects</h2>
+                <div class="details-2">
+                    <h3 id="audio-sequencer"><strong>Audio Sequencer</strong></h3>
+                    <p><em>Python</em>, <em>Whisper (OpenAI)</em></p>
+                    <p><a href="https://github.com/rdkieran/audio-sequencer">&gt; Audio Sequencer on GitHub</a></p>
+                </div>
+                <p class="description">Developed with <em>Sandside Studios</em> to help in sequencing two-person dialogue recordings where each speaker for a given dialogue script is recorded separately.</p>
+                <p class="description">Utilising AI-generated word-level transcriptions of given audio files and the original dialogue script, the python script locates spoken dialogue in each transcript, finds matches within the original dialogue script, extracts matched audio using transcript timestamps, and organises the files into the order of the script.</p>
+                <p class="description">The individual audio files can then be spliced together to produce one continuous audio file consistent with the dialogue script.</p>
+
+                <div class="details-2">
+                    <h3 id="organisational-spreadsheets"><strong>Organisational Spreadsheets</strong></h3>
+                    <p><em>Google Sheets</em></p>
+                </div>
+                <p class="description">Personal spreadsheets for tracking projects, productivity, finances, and inventory.</p>
+                <p class="description">Each sheet utilises extensive formulae for processing data to return useful statistics pertaining to project progress, time averages useful in time and project planning, and finance budgeting.</p>
+            </div>
+
+            <div>
+                <h2 id="work-history">Work History</h2>
+                <div class="details-2">
+                    <h3 id="pret-a-manger"><strong>Pret A Manger, Team Member</strong></h3>
+                    <p><em>Feb 2022 - Present</em></p>
+                </div>
+                <ul>
+                    <li>
+                        <p>Paying due attention to customers to anticipate their needs, keep them up to date with the progress of their orders, and ensure a level of confidence in the service they are receiving by communicating when necessary.</p>
+                    </li>
+                    <li>
+                        <p>Working with managers, baristas, and fellow team members to deliver a fast service. Understanding the responsibilities of each role and where it is appropriate for me to help, and how to communicate while assisting others with their responsibilities.</p>
+                    </li>
+                    <li>
+                        <p>Being aware of stock availability and venue cleanliness, recognising opportunities to change tasks to rectify problems, and quickly acting on requests from colleagues, without forgetting my priority toward providing customer service first.</p>
+                    </li>
+                </ul>
+
+                <div class="details-2">
+                    <h3 id="freelance-illustrator"><strong>Self-Employed, Freelance Illustrator</strong></h3>
+                    <p><em>Jan 2020 - Present</em></p>
+                </div>
+                <ul>
+                    <li>
+                        <p>Utilising social media to source clients, and collaborating with those clients to understand and solve their design problems, while consulting them at key points of the process to ensure they're happy with the direction the work is taking.</p>
+                    </li>
+                    <li>
+                        <p>Developing productivity and time tracking methods to better plan and understand my use of time, thus optimising my workflow.</p>
+                    </li>
+                    <li>
+                        <p>Iterating on ideas to find novel solutions, making decisions based on considerations to the clients needs, as well as my own design principles.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="education">Education</h2>
+                <div class="details-2">
+                    <h3 id="bdes-hons-illustration-university-of-dundee"><strong>BDes (Hons) Illustration, University of Dundee</strong></h3>
+                    <p><em>Sep. 2016 - June 2019</em></p>
+                    <p><em>First Class Honours</em></p>
+                </div>
+                <ul>
+                    <li>
+                        <p>Tackling a broad range of design challenges, developing strong iteration skills to consider projects from different angles before applying critical analysis to decide on the best direction for a given project.</p>
+                    </li>
+                    <li>
+                        <p>Working with colleagues within my discipline to share expertise and offer advice and constructive criticism on projects.</p>
+                    </li>
+                    <li>
+                        <p>Contributing illustrations and spread designs to <em>The Magdalen</em>, the monthly campus magazine. Working with writers and graphic designers to meet regular deadlines.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="interests">Interests</h2>
+                <div class="details-2">
+                    <h3 id="comics"><strong>Comics</strong></h3>
+                </div>
+                <p class="description">I write, illustrate, and publish my own comic series, set within a <em>Star Trek</em>-like universe, encompasing many different characters and stories.I have published the comics digitally on Twitter and Patreon, and through online fairs. I also manage sales of physical copies through BigCartel.</p>
+                <p class="description">I also collect graphic novels, and network within the local London comics community.</p>
+            </div>
+        </div>
+    </body>
+</html>
