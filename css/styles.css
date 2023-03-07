@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    width: 60%;
+    min-width:500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+    padding-top:20px
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.details, .main{
+    line-height: 7px;
+    text-align:center;
+    padding: 3px;
+}
+.details-2{
+    line-height: 7px;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding:7px;
+    font-size: 14px;
+}
+table{
+    width:100%;
+    table-layout: fixed;
+}
+th{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+th, td{
+    height:30px;
+    overflow: hidden;
+}
+
+
+h1, h2{
+    border-bottom: 2px rgba(0, 0, 0, 0.2) solid;
+}
+h1{
+    text-align:center;
+}
+
+.description{
+    padding-left: 40px;
+}
+
+a{
+    text-decoration:none;
+}
