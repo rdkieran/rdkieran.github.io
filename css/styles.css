@@ -57,7 +57,7 @@ h1{
     padding-left: 40px;
 }
 .title-details{
-    line-height: 5px;
+    line-height: 0.4; /* 1em = 12px in this case. 20/12 == 1.666666  */
 }
 
 
