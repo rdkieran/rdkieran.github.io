@@ -53,7 +53,6 @@ footer{
     padding-right: 2px;
 }
 
-
 /* TABLES AND CELLS */
 table, th, td {
     border: 1px #D7D7D7 solid;
@@ -75,8 +74,7 @@ td{
     overflow: hidden;
 }
 
-
-/* <h1>, <h2>, <h3> */
+/* HEADINGS */
 h1, h2{
     border-bottom: 2px #D7D7D7 solid;
 }
@@ -88,6 +86,11 @@ h2{
     height: 22px;
 }
 
+/* SECTIONS */
+.section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* <p> CLASSES */
 .indented{
@@ -98,7 +101,6 @@ h2{
 .customLineHeight{
     line-height: 0.3em;
 }
-
 
 /* LIST STYLING */
 .customIndent{
