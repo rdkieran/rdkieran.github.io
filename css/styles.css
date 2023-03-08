@@ -8,8 +8,6 @@ html, body {
     font-size:16px;
     color: #ffffff;
     line-height: 18px;
-
-    padding-top: 20px;
 }
 html {
     display: table;
@@ -48,14 +46,8 @@ footer{
 }
 .crumb, .contactLink , .socialsLinks{
     display: inline-block;
-}
-.crumb a::after {
-    display: inline-block;
-    color: #5D5D5D;
-    content: '|';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 
