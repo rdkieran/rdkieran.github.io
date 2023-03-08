@@ -96,15 +96,20 @@ h2{
 
 /* <p> CLASSES */
 .indented{
-    padding-left: 25px
+    padding-left: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
-.title-details{
+.customLineHeight{
     line-height: 0.3em;
 }
+
 
 /* LIST STYLING */
 .customIndent{
     margin-left: -15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 /* HYPERLINK STYLING */
