@@ -3,26 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Robbie Kieran CV</title>
+        <link rel="icon" type="image/x-icon" href="../website/favicon.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../css/styles.css">
     </head>
 
     <body>
-        <div class="content">
-
+        <div class="container">
             <header>
-                <h1 id="robbie-kieran">Robbie Kieran</h1>
-                <div class="title-details">
-                    <h4 id="contact">Contact</h4>
-                    <p><a href="https://www.linkedin.com/in/rdkieran/" target="_blank"><img src="linkedin.svg"></a> <a href="mailto:rdkieran.illu@gmail.com"><img src="email.svg"></a> <a href="https://github.com/rdkieran" target="_blank"><img src="github.svg"></a></p>
-                </div>
-                <div class="title-details">
-                    <h4 id="navigation">Navigation</h4>
-                    <p><a href="#skills">Skills</a> | <a href="#projects">Projects</a> | <a href="#work-history">Work History</a> | <a href="#education">Education</a> | <a href="#interests">Interests</a></p>
-                </div>
-            </header>
+                <a href="../index.html"><img src="../website/favicon.png" style="float:none; max-width:100px"></a></a>
 
+                <h1 id="robbie-kieran">Robbie Kieran</h1>
+
+                <nav class="contact">
+                    <ol>
+                        <li class="contactLink"><a href="https://github.com/rdkieran" target="_blank"><img src="../nav-icons/github-icon.png" class="contactImage" alt="github link"></a></li>
+                        <li class="contactLink"><a href="https://www.linkedin.com/in/rdkieran/" target="_blank"><img src="../nav-icons/linkedin-icon.png" class="contactImage" alt="linkedin link"></a></li>
+                        <li class="contactLink"><a href="mailto:rdkieran.illu@gmail.com"><img src="../nav-icons/email-icon.png" class="contactImage" alt="email link"></a></li>
+                    </ol>
+                </nav>
+                <nav class="crumbs">
+                    <ol>
+                        <li class="crumb"><a href="#skills">Skills</a></li>
+                        <li class="crumb"><a href="#projects">Projects</a></li>
+                        <li class="crumb"><a href="#work-history">Work History</a></li>
+                        <li class="crumb"><a href="#education">Education</a></li>
+                        <li class="crumb"><a href="#interests">Interests</a></li>
+                    </ol>
+                </nav>
+            </header>
 
             <h2 id="skills">Skills</h2>
             <table>
@@ -40,31 +50,29 @@
                 </tr>
             </table>
                 
-
             <h2 id="projects">Projects</h2>
-            <div class="title-details">
+            <div class="customLineHeight">
                 <h3 id="audio-sequencer"><strong>Audio Sequencer</strong></h3>
                 <p><em>Python</em>, <em>Whisper (OpenAI)</em></p>
-                <p><a href="https://github.com/rdkieran/audio-sequencer" target="_blank">&gt; Audio Sequencer on GitHub</a></p>
+                <p>&gt; <a href="https://github.com/rdkieran/audio-sequencer" target="_blank">Audio Sequencer on GitHub</a></p>
             </div>
             <p class="indented">Developed with <em>Sandside Studios</em> to help in sequencing two-person dialogue recordings where each speaker for a given dialogue script is recorded separately.</p>
             <p class="indented">Utilising AI-generated word-level transcriptions of given audio files and the original dialogue script, the python script locates spoken dialogue in each transcript, finds matches within the original dialogue script, extracts matched audio using transcript timestamps, and organises the files into the order of the script.</p>
             <p class="indented">The individual audio files can then be spliced together to produce one continuous audio file consistent with the dialogue script.</p>
 
-            <div class="title-details">
+            <div class="customLineHeight">
                 <h3 id="organisational-spreadsheets"><strong>Organisational Spreadsheets</strong></h3>
                 <p><em>Google Sheets</em></p>
             </div>
             <p class="indented">Personal spreadsheets for tracking projects, productivity, finances, and inventory.</p>
             <p class="indented">Each sheet utilises extensive formulae for processing data to return useful statistics pertaining to project progress, time averages useful in time and project planning, and finance budgeting.</p>
 
-
             <h2 id="work-history">Work History</h2>
-            <div class="title-details">
+            <div class="customLineHeight">
                 <h3 id="pret-a-manger"><strong>Pret A Manger, Team Member</strong></h3>
                 <p><em>Feb 2022 - Present</em></p>
             </div>
-            <ul>
+            <ul class="customIndent">
                 <li>
                     <p>Paying due attention to customers to anticipate their needs, keep them up to date with the progress of their orders, and ensure a level of confidence in the service they are receiving by communicating when necessary.</p>
                 </li>
@@ -76,11 +84,11 @@
                 </li>
             </ul>
 
-            <div class="title-details">
+            <div class="customLineHeight">
                 <h3 id="freelance-illustrator"><strong>Self-Employed, Freelance Illustrator</strong></h3>
                 <p><em>Jan 2020 - Present</em></p>
             </div>
-            <ul>
+            <ul class="customIndent">
                 <li>
                     <p>Utilising social media to source clients, and collaborating with those clients to understand and solve their design problems, while consulting them at key points of the process to ensure they're happy with the direction the work is taking.</p>
                 </li>
@@ -92,14 +100,13 @@
                 </li>
             </ul>
 
-
             <h2 id="education">Education</h2>
-            <div class="title-details">
-                <h3 id="bdes-hons-illustration-university-of-dundee"><strong>BDes (Hons) Illustration, University of Dundee</strong></h3>
+            <div class="customLineHeight">
+                <h3 id="university"><strong>BDes (Hons) Illustration</strong></h3>
+                <p><em>University of Dundee</em></p>
                 <p><em>Sep. 2016 - June 2019</em></p>
-                <p><em>First Class Honours</em></p>
             </div>
-            <ul>
+            <ul class="customIndent">
                 <li>
                     <p>Tackling a broad range of design challenges, developing strong iteration skills to consider projects from different angles before applying critical analysis to decide on the best direction for a given project.</p>
                 </li>
@@ -111,12 +118,25 @@
                 </li>
             </ul>
 
-        
             <h2 id="interests">Interests</h2>
-            <h3 id="comics"><strong>Comics</strong></h3>
+            
+            <div class="customLineHeight">
+                <h3 id="comics"><strong>Comics</strong></h3>
+            </div>
             <p class="indented">I write, illustrate, and publish my own comic series, set within a <em>Star Trek</em>-like universe, encompasing many different characters and stories.I have published the comics digitally on Twitter and Patreon, and through online fairs. I also manage sales of physical copies through BigCartel.</p>
             <p class="indented">I also collect graphic novels, and network within the local London comics community.</p>
 
+            <footer>
+                <nav class="socials">
+                    <ol>
+                        <li class="socialsLinks"><a href="https://www.twitter.com/rdkieran"><img src="../nav-icons/twitter-icon.png" class="contactImage" alt="twitter link"></a></li>
+                        <li class="socialsLinks"><a href="https://www.instagram.com/rdkieran" target="_blank"><img src="../nav-icons/instagram-icon.png" class="contactImage" alt="instagram link"></a></li>
+                        <li class="socialsLinks"><a href="https://github.com/rdkieran" target="_blank"><img src="../nav-icons/github-icon.png" class="contactImage" alt="github link"></a></li>
+                        <li class="socialsLinks"><a href="https://www.linkedin.com/in/rdkieran/" target="_blank"><img src="../nav-icons/linkedin-icon.png" class="contactImage" alt="linkedin link"></a></li>
+                        <li class="socialsLinks"><a href="mailto:rdkieran.illu@gmail.com" target="_blank"><img src="../nav-icons/email-icon.png" class="contactImage" alt="email link"></a></li>
+                    </ol>
+                </nav>
+            </footer>
         </div>
     </body>
 </html>

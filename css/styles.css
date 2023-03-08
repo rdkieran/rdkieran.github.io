@@ -1,9 +1,15 @@
 html, body {
+    background-color: #1E1E1E;
+
     height: 100%;
-    width: 60%;
+    width: 90%;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 20px;
-    padding-top:20px
+    font-size:16px;
+    color: #ffffff;
+    line-height: 18px;
+
+    padding-top: 20px;
 }
 html {
     display: table;
@@ -14,16 +20,50 @@ body {
     vertical-align: middle;
 }
 
+@media screen and (min-width: 60rem) {
+    .container {
+      margin: 10em 10em;
+    }
+  }
 
-/* HEADER */
+
+/* HEADER AND FOOTER*/
 header{
     text-align:center;
+}
+footer{
+    padding-top: 20px;
+}
+
+.contactImage{
+    max-width:  50px;
+    max-height: 50px;
+}
+
+/* NAV STYLING */
+nav {
+}
+.crumbs ol, .contact ol, .socials ol{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+.crumb, .contactLink , .socialsLinks{
+    display: inline-block;
+}
+.crumb a::after {
+    display: inline-block;
+    color: #5D5D5D;
+    content: '|';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
 }
 
 
 /* TABLES AND CELLS */
 table, th, td {
-    border: 1px solid;
+    border: 1px #D7D7D7 solid;
     border-collapse: collapse;
     padding:7px;
     font-size: 14px;
@@ -35,7 +75,7 @@ table{
 th{
     height:30px;
     overflow: hidden;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:#000000;
 }
 td{
     height:30px;
@@ -45,23 +85,44 @@ td{
 
 /* <h1>, <h2>, <h3> */
 h1, h2{
-    border-bottom: 2px rgba(0, 0, 0, 0.2) solid;
+    border-bottom: 2px #D7D7D7 solid;
 }
 h1{
+    height: 25px;
     text-align:center;
+}
+h2{
+    height: 22px;
 }
 
 
 /* <p> CLASSES */
 .indented{
-    padding-left: 40px;
+    padding-left: 25px
 }
 .title-details{
-    line-height: 0.4; /* 1em = 12px in this case. 20/12 == 1.666666  */
+    line-height: 0.3em;
 }
 
+/* LIST STYLING */
+.customIndent{
+    margin-left: -15px;
+}
 
 /* HYPERLINK STYLING */
-a{
+a {
+    text-underline-offset: 2px;
+}
+a:link {
+    color:#D7D7D7;
+}
+a:visited {
+    color:#9A9A9A;
+}
+a:hover {
+    color:#9A9A9A;
     text-decoration:none;
+}
+a:active {
+    color:#5D5D5D;
 }
