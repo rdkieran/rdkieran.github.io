@@ -1,10 +1,10 @@
 html, body {
     background-color: #1E1E1E;
 
-    height: 90%;
+    height: 100%;
     width: 90%;
-    padding-top:5%;
-    padding-bottom:5%;
+
+    padding-top: 10px;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:16px;
@@ -22,7 +22,8 @@ body {
 
 @media screen and (min-width: 60rem) {
     .container {
-      margin: 10em 10em;
+        height: 100%;
+        margin: 5em 10em;
     }
   }
 
