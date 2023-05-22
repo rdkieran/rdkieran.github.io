@@ -44,6 +44,11 @@ footer{
 }
 
 /* NAV STYLING */
+nav {
+    padding: 5% 0%;
+    font-size:xx-large;
+    line-height: 1.2em;
+}
 .crumbs ol, .contact ol, .socials ol{
     list-style-type: none;
     padding-left: 0;
@@ -133,4 +138,13 @@ a:hover {
 }
 a:active {
     color:#5D5D5D;
+}
+
+/* COMICS */
+img {
+    width: 100%;
+    height: auto;
+}
+.comic {
+    text-align:center;
 }

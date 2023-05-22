@@ -1,7 +1,4 @@
 # notes
-temp-files
+venv
+/temp-files/
 notes.md
-/website/icon-sheet.png
-/website/email.svg
-/website/linkedin.svg
-/website/github.svg
