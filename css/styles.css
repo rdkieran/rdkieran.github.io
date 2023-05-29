@@ -4,7 +4,7 @@ html, body {
     color: #ffffff;
 }
 
-/* HYPERLINK STYLING */
+/* LINKS */
 a {
     text-underline-offset: 2px;
 }
@@ -20,4 +20,16 @@ a:hover {
 }
 a:active {
     color:#5D5D5D;
+}
+
+/* IMAGES */
+div.gallery img {
+    width: 20%;
+    height: auto;
+}
+
+/* HEADINGS */
+h1, h2 {
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
 }
