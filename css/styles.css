@@ -1,0 +1,23 @@
+html, body {
+    background-color: #1E1E1E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* HYPERLINK STYLING */
+a {
+    text-underline-offset: 2px;
+}
+a:link {
+    color:#D7D7D7;
+}
+a:visited {
+    color:#9A9A9A;
+}
+a:hover {
+    color:#9A9A9A;
+    text-decoration:none;
+}
+a:active {
+    color:#5D5D5D;
+}
