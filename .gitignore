@@ -2,16 +2,6 @@
 venv
 /temp-files/
 
-/img/comics/loose_ends/
-/img/comics/rat_boy_diaries/
-/img/comics/space_story_2/
-/img/comics/self_destruct_sequence/
-
-space_story_2.html
-loose_ends.html
-rat_boy_diaries.html
-self_destruct_sequence.html
-
 devlog.md
 
 generate_img_tags.py
