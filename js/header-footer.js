@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var footer = document.createElement('footer');
     footer.className = 'footer';
-    footer.innerHTML = '<nav><a><img src="/img/nav/github.png"></a><a><img src="/img/nav/twitter.png"></a><a><img src="/img/nav/instagram.png"></a><a><img src="/img/nav/linkedin.png"></a><a><img src="/img/nav/email.png"></a></nav><p class="copyright">Copyright 2023, Robbie Kieran</p>';
+    footer.innerHTML = '<nav><a href="https://github.com/rdkieran"><img src="/img/nav/github.png"></a><a href="https://twitter.com/rdkieran"><img src="/img/nav/twitter.png"></a><a href="https://www.instagram.com/rdkieran/"><img src="/img/nav/instagram.png"></a><a href="https://www.linkedin.com/in/rdkieran/"><img src="/img/nav/linkedin.png"></a><a href="mailto:rdkieran.illu@gmail.com"><img src="/img/nav/email.png"></a></nav><p class="copyright">Copyright 2023, Robbie Kieran</p>';
     
     // find header and footer elements in HTML
     var headerElement = document.querySelector('header');
