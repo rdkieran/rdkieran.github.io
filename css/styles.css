@@ -2,101 +2,99 @@ html, body {
     background-color: #1E1E1E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
+    width: 90%;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    padding-top: 5%;
+}
+nav a.homepage {
+    font-weight: bold;
+    padding-right: 10px;
+}
+nav a {
+    text-decoration:none;
+    padding-right: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-style: italic;
+    color: #D7D7D7;
+    padding: 5%;
+}
+footer img {
+    padding:2px;
+    width: 50px;
+    height: auto;
+}
+
+/* HEADINGS */
+h1, h2 {
+    padding-top: 20px;
+}
+h1 {
+    line-height: 5px;
+}
+h2 {
+    border-bottom: 1px solid #5D5D5D;
+}
+span.publish-date {
+    font-style:italic;
+    color: #D7D7D7;
+}
+
+/* ARTICLE */
+p code {
+    color:#FF7D7D;
+}
+pre {
+    padding: 10px;
+    border: 1px solid #5D5D5D;
 }
 
 /* LINKS */
 a {
     text-underline-offset: 2px;
-}
+} 
 a:link {
     color:#FF7D7D;
 }
-a:visited {
+a:visited, a:active, a:hover {
     color:#ff7d7d70;
 }
 a:hover {
-    color:#ff7d7d70;
     text-decoration:none;
 }
-a:active {
-    color:#ff7d7d33;
+
+/* LISTS */
+li {
+    list-style-type: none;
+    padding-top:5px;
+}
+li a {
+    text-decoration:none;
+}
+li span.date {
+    display: inline-block;
+    width: 100px;
+    color:#D7D7D7;
+
+}
+li a.title {
+    display: inline-block;
+    padding-left: 10px;
 }
 
 /* IMAGES */
-div.gallery img {
-    display: inline-block;
-    width: 40%;
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+.gallery img {
+    max-width: 20%;
     padding: 10px;
-    height: auto;
-}
-
-/* HEADER & FOOTER */
-header, footer {
-    text-align: center;
-    padding: 5%;
-}
-header nav {
-    font-size: x-large;
-}
-nav a:link {
-    text-decoration: none;
-}
-footer {
-    font-style: italic;
-    font-size: xx-small;
-    color:#D7D7D7;
-}
-
-/* ARTICLE */
-article {
-    margin: 0 10%;
-}
-article h1, article h2, article h3{
-    font-size: smaller;
-}
-article h2 {
-    border-bottom: 1px solid white;
-    padding-top: 20px;
-}
-article p{
-    text-align: left;
-    font-size: smaller;
-}
-p .publish-date {
-    color:#D7D7D7;
-    font-style: italic;
-    font-size: smaller;
-}
-article pre {
-    font-size:x-large;
-    padding: 2%;
-    border: 1px solid #5D5D5D;
-}
-p code {
-    color: #FF7D7D;
-}
-
-/* TABLES */
-table, th, td, tr{
-    padding:5px;
-    font-size: large;
-    text-align: left;
-}
-th {
-    border-bottom: 1px solid #5D5D5D;
-}
-
-@media (min-width: 1000px) {
-    pre code {
-      font-size: 14px;
-    }
-    article {
-        margin: 0 20%;
-    }
-    header nav {
-        font-size: 14px;
-    }
-    footer {
-        font-size: 14px;
-    }
 }
