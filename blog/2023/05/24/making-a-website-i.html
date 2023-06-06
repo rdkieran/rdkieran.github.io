@@ -4,156 +4,73 @@
         <meta charset="UTF-8">
         <title>Robbie Kieran</title>
         <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="C:\Users\Robbie\Documents\GitHub\rdkieran.github.io\css\styles.css">
+        <!--<link rel="stylesheet" href="/css/styles.css">-->
     </head>
 
     <body>
         <header>
-            <a href="/">Robbie Kieran</a>
-            <a href="/">home</a>
-            <a href="/about.html">about</a>
-            <a href="/blog.html">blog</a>
-            <a href="/comics.html">comics</a>
+            <nav>
+                <span class="homepage"><a href="/">Robbie Kieran</a></span>
+                <span class="subpage"><a href="/">home</a></span>
+                <span class="subpage"><a href="/about.html">about</a></span>
+                <span class="subpage"><a href="/blog.html">blog</a></span>
+                <span class="subpage"><a href="/comics.html">comics</a></span>
+            </nav>
         </header>
 
         <article>
-            <h1 id="website-devlog-1-hello-world">Website Devlog #1: Hello World</h1>
-            <p><em>May 23, 2023</em></p>
-            <h2 id="i-want-a-new-website">I want a new website</h2>
-            <p>I&#39;ve had a website once before, on <a href="https://carrd.co/">Carrd</a>. The whole thing was one page which gave the illusion of multiple pages by hiding content behind section break dividers. I didn&#39;t know how to code anything when I made this, and it did the trick for having a handy place to show off my portfolio. But I&#39;ve always wanted a proper website, one which hosts a blog and my comics in an interactive way. Maybe lists of characters and a little wiki for my comics, as well as a place for personal writing. As I&#39;ve developed coding skills, I&#39;ve wanted a place to document my projects as well. An all-in-one content hub for my interests.</p>
+            <h1>Making a Website I: Hello World</h1>
+            <p><span class="publish-date">May 23, 2023</span></p>
+
+            <h2>I want a new website</h2>
+            <p>I've had a website once before, on <a href="https://carrd.co/" target="_blank">Carrd</a>. The whole thing was one page which gave the illusion of multiple pages by hiding content behind section break dividers. I didn't know how to code anything when I made this, and it did the trick for having a handy place to show off my portfolio. But I've always wanted a proper website, one which hosts a blog and my comics in an interactive way. Maybe lists of characters and a little wiki for my comics, as well as a place for personal writing. As I've developed coding skills, I've wanted a place to document my projects as well. An all-in-one content hub for my interests.</p>
             
-            <h2 id="looking-for-solutions">Looking for solutions</h2>
-            <p>Looking to skip the headaches of building a website from scratch, I looked into templates like <a href="https://rarebit.neocities.org/">Rarebit</a> and frameworks like <a href="https://gohugo.io/">Hugo</a>. Both of these had their strengths, and would have been fine for a webcomic or a blog respectively. </p>
+            <h2>Looking for solutions</h2>
+            <p>Looking to skip the headaches of building a website from scratch, I looked into templates like <a href="https://rarebit.neocities.org/" target="_blank">Rarebit</a> and frameworks like <a href="https://gohugo.io/" target="_blank">Hugo</a>. Both of these had their strengths, and would have been fine for a webcomic or a blog respectively. </p>
             <p>But I have some problems with these. For one thing, I want both my comics and a blog. Rarebit is exclusively a webcomic template, with customisable HTML, CSS, and JavaScript to allow you to set up your webcomic site with minimal coding knowledge. Hugo is more diverse, but the themes are largely for blogs and gallery portfolios, not for webcomics. </p>
-            <p>Another limitation was that, where Rarebit would be great for hosting a webcomic with potential to graft on a blog later, I have <em>multiple</em> comics I want to host. I fiddled with the template a lot to see if I could find a way to make it work for more than one comic, but I began to foresee a future of constant bugfixes to code I didn&#39;t write and don&#39;t understand. It was enough of a headache combing through variables and functions trying to make sense of the JavaScript elements. I think I just about got there, but just enough to realise that if I wanted to make this the way I imagined it, without creating messy Frankenstein code, it might be best to just start from scratch. That&#39;s either dedication or stubborn impracticality. Whatever it is, I&#39;m doing it now.</p>
+            <p>Another limitation was that, where Rarebit would be great for hosting a webcomic with potential to graft on a blog later, I have <em>multiple</em> comics I want to host. I fiddled with the template a lot to see if I could find a way to make it work for more than one comic, but I began to foresee a future of constant bugfixes to code I didn't write and don't understand. It was enough of a headache combing through variables and functions trying to make sense of the JavaScript elements. I think I just about got there, but just enough to realise that if I wanted to make this the way I imagined it, without creating messy Frankenstein code, it might be best to just start from scratch. That's either dedication or stubborn impracticality. Whatever it is, I'm doing it now.</p>
             
-            <h2 id="starting-from-scratch">Starting from scratch</h2>
-            <p>So I actually started on this website a few months ago. Just an index page and my CV on GitHub pages with some basic styling while I was looking for work. I&#39;d just figured out GitHub and was excited to commit as many useless projects as my heart desired, leading to a burnout which taught me the importance of actually having some challenge in my work. I recognised that nothing is gained unless you&#39;re at some disadvantage going in, and I&#39;m definitely at a disadvantage here. I&#39;ve learned HTML and CSS, and I&#39;ve gone over the syntax of JavaScript, but I haven&#39;t used any of them extensively outside of lecture examples and short exercises. Every time I look at JavaScript I feel weak. Blame that on the shock of going from a language I was comfortable with to one I wasn&#39;t. I never anticipated that being a complete amateur again would be so painful.</p>
+            <h2>Starting from scratch</h2>
+            <p>So I actually started on this website a few months ago. Just an index page and my CV on GitHub pages with some basic styling while I was looking for work. I'd just figured out GitHub and was excited to commit as many useless projects as my heart desired, leading to a burnout which taught me the importance of actually having some challenge in my work. I recognised that nothing is gained unless you're at some disadvantage going in, and I'm definitely at a disadvantage here. I've learned HTML and CSS, and I've gone over the syntax of JavaScript, but I haven't used any of them extensively outside of lecture examples and short exercises. Every time I look at JavaScript I feel weak. Blame that on the shock of going from a language I was comfortable with to one I wasn't. I never anticipated that being a complete amateur again would be so painful.</p>
             <p>So I decided I should stick to what I know and make iterative improvements as I learn, for as long as it takes. An <em>agile</em> approach, they might say. I took the CSS and assets from my original CV GitHub Pages site I had and loaded in my content. To start with, I put in the entirety of my comic, Space Story; the first in a series of sci-fi comics set in the same universe. I then put together some HTML files (<code>index.html</code>, <code>comics.html</code>, <code>space_story.html</code>, <code>blog.html</code>, <code>about.html</code>) and copied a common <code>&lt;nav&gt;</code> bar into each of them.</p>
             <p>For the sake of the Space Story pages, all 165 of them, I put together some Python scripts to rename them all and generate <code>&lt;img&gt;</code> tags for them all to copy into the <code>space_story.html</code> file, haphazardly wrapped in a <code>&lt;div&gt;</code> tag so I could center all the comic pages.</p>
-            <pre><code><span class="hljs-keyword">import</span> os
-
-            def rename_files(folder_path):<span class="hljs-type"></span>
-                files = os.listdir(folder_path)
-                files.sort()
-
-                <span class="hljs-keyword">for</span> i, file_name <span class="hljs-keyword">in</span> enumerate(files):<span class="hljs-type"></span>
-                    file_extension = os.path.splitext(file_name)[<span class="hljs-number">1</span>]
-                    <span class="hljs-keyword">new</span><span class="hljs-type">_file_name</span> = f<span class="hljs-string">"pg{i+1}{file_extension}"</span>
-
-                    old_file_path = os.path.join(folder_path, file_name)
-                    <span class="hljs-keyword">new</span><span class="hljs-type">_file_path</span> = os.path.join(folder_path, <span class="hljs-keyword">new</span><span class="hljs-type">_file_name</span>)
-                    os.rename(old_file_path, <span class="hljs-keyword">new</span><span class="hljs-type">_file_path</span>)
-
-                    print(f<span class="hljs-string">"Renamed {file_name} to {new_file_name}"</span>)
-
-            folder_path = <span class="hljs-string">"img\\comics\\space_story"</span>
-            rename_files(folder_path)
-            </code></pre><p>&mdash; <code>renamer.py</code>, generated by ChatGPT (sorry)</p>
-
-            <pre><code><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-keyword">range</span> (165):
-                filename = <span class="hljs-string">"img\\comics\\space_story_2\\pg{}.png"</span>.<span class="hljs-keyword">format</span>(i+1)
-                href = <span class="hljs-string">"&lt;img src=\"</span>{}\<span class="hljs-string">"&gt;"</span>.<span class="hljs-keyword">format</span>(filename)
-                <span class="hljs-keyword">print</span>(href)
-            </code></pre><p>&mdash; <code>generate_img_tags.py</code>, by me</p>
-            <p>Aside from this detour, nothing else very technical had to happen to get this first version put together. It&#39;s poorly styled, with comic pages taking up the whole page and text sizes completely out of proportion. I know too that I&#39;ve not styled half of what I&#39;d need to, which is why I&#39;m going to throw around some content for me to style in this blog post. I&#39;ll find an excuse to make a table before the end of this first entry.</p>
             
-            <h2 id="the-current-state-of-affairs">The current state of affairs</h2>
+<pre><code>import os
+
+    def rename_files(folder_path):
+    files = os.listdir(folder_path)
+    files.sort()
+
+    for i, file_name in enumerate(files):
+        file_extension = os.path.splitext(file_name)[1]
+        new_file_name = f"pg{i+1}{file_extension}"
+
+        old_file_path = os.path.join(folder_path, file_name)
+        new_file_path = os.path.join(folder_path, new_file_name)
+        os.rename(old_file_path, new_file_path)
+
+        print(f"Renamed {file_name} to {new_file_name}")
+
+    folder_path = "img\\comics\\space_story"
+    rename_files(folder_path)</code></pre>
+            <p>&mdash; <code>renamer.py</code>, generated by ChatGPT (sorry)</p>
+
+<pre><code>for i in range (165):
+    filename = "img\\comics\\space_story_2\\pg{}.png".format(i+1)
+    href = "&lt;img src=\"{}\"&gt;".format(filename)
+    print(href)</code></pre>
+            <p>&mdash; <code>generate_img_tags.py</code>, by me</p>
+            
+            <p>Aside from this detour, nothing else very technical had to happen to get this first version put together. It's poorly styled, with comic pages taking up the whole page and text sizes completely out of proportion. I know too that I've not styled half of what I'd need to, which is why I'm going to throw around some content for me to style in this blog post. I'll find an excuse to make a table before the end of this first entry.</p>
+            
+            <h2>The current state of affairs</h2>
             <div class="gallery">
                 <img src="img/websitev1_about.png" alt=""> <img src="img/websitev1_blog.png" alt=""> <img src="img/websitev1_comics.png" alt=""> <img src="img/websitev1_spacestory.png" alt=""></p>
             </div>
-            <p>So this is where I start. A static site with some basic image and text content. I don&#39;t see myself wanting to put much more than that on my website, so I&#39;ll start out by working on the styling, and getting onto JavaScript later, once everything looks nicer. This is maybe a bit backwards, but all roads lead to Rome.</p>
-            
-            <h2 id="plan">Plan</h2>
-            <table>
-                <tr>
-                    <td>Done</td>
-                    <td>To-Do</td>
-                    <td>Details</td>
-                </tr>
-                <tr>
-                    <td>X</td>
-                    <td><b>V1 Doc</b></td>
-                    <td><em>Cover initial and pre-development stages and overall concept</em></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Improve CSS</td>
-                    <td>Tailor CSS for mobile and desktop, particularly the blog elements</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><b>V2 Doc</b></td>
-                    <td><em>Document above</em></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Comic JavaScript</td>
-                    <td>With reference to *Rarebit*, work on creating a basic comic template page for Space Story which allows moving between pages.</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Blog JavaScript</td>
-                    <td>With 3 documentation blogs in place, develop similar system for moving through blog posts as used for individual comic pages.</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><b>V3 Doc</b></td>
-                    <td><em>Document above</em></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Revise CSS</td>
-                    <td>Clear up CSS issues</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Add content</td>
-                    <td>Add other comic pages and repeat templating process</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><b>V4 Doc</b></td>
-                    <td><em>Document above, with focus on file architecture</em></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Index pages</td>
-                    <td>Add index pages for Comics for navigation between titles</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Index JavaScript</td>
-                    <td>Use JavaScript to generate blog index page</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><b>V5 Doc</b></td>
-                    <td><em>Document above</em></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Home page</td>
-                    <td>Develop landing page, format and purpose TBD.</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>About page</td>
-                    <td>Update about page and socials links</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Header / Footer</td>
-                    <td>Put together JavaScript for Header/Footer elements for all pages</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><b>V6 Doc</b></td>
-                    <td><em>Document above</em></td>
-                </tr>
-            </table>
+            <p>So this is where I start. A static site with some basic image and text content. I don't see myself wanting to put much more than that on my website, so I'll start out by working on the styling, and getting onto JavaScript later, once everything looks nicer. This is maybe a bit backwards, but all roads lead to Rome.</p>
         </article>
 
-        <footer></footer>
+        <footer>Copright 2023, Robbie Kieran</footer>
     </body>
 </html>
