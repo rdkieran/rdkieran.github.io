@@ -10,3 +10,14 @@ renamer.py
 /css/styles-v*
 
 /blog/2023/06/
+
+/js/comic_archive.js
+/comics/about.html
+/comics/archive.html
+/comics/characters.html
+
+/comics/img/comicnav/comicnav.clip
+/comics/img/characters
+/comics/img/thumbs
+/comics/css
+/css/styles.css
