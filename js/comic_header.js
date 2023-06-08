@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(".writeHeader").innerHTML = `
     <header align="center">
         <div id="nav">
-            <a href="index.html">home</a>
+            <a href="/index.html">home</a>
             <a href="/about.html">about</a>
             <a href="/comics.html">comics</a>
             <a href="/blog.html">blog</a>
