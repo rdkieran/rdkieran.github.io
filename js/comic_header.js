@@ -2,6 +2,9 @@
 //at the bottom of your page, but before the js script calls and the closing body tag, put an empty div with a class of "writeHeader"
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(".writeHeader").innerHTML = `
+    <div class="bannerImage">
+        <a href="/index.html"><img src="/img/banner/robbie-3.png" alt="banner" /></a> 
+    </div>
     <nav>
         <a href="/index.html">home</a>
         <a href="/about.html">about</a>
