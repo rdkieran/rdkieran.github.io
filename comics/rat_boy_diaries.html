@@ -2,31 +2,39 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>WebComic | Characters</title>
+
+    <title>Rat Boy Diaries</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
     
     <script src="/js/comic_settings-rbd.js" defer></script>
     <script src="/js/comic_show.js" defer></script>
+    
     <script src="/js/comic_header.js" defer></script>
     <script src="/js/comic_footer.js" defer></script>
+    <script src="/js/rarebit_credit.js" defer></script>
   </head>
 
   <body>
-    <div align="center">
-      <div class="writeHeader"></div>
-
+    <header class="writeHeader"></header>
+    
+    <article class="comicPage">
       <div id="showComic">
         <div class="writePageTitle"></div>
         <div class="writeNav"></div>
         <div class="writePageClickable"></div>
         <div class="writeNav"></div>
+        <div class="rarebitCredit"></div>
       </div>
-    </div>
 
-    <!--<div id="authorNotes">
-      <h2>Author Notes</h2>
-      <div class="writeAuthorNotes"></div>
-    </div>-->
+      <div id="authorNotes">
+        <div class="writeAuthorNotes"></div>
+      </div>
 
-    <div class="writeFooter"></div>
+      <div class="rarebitCredit"></div>
+    </article>
+
+    <footer class="writeFooter"></footer>
   </body>
 </html>
