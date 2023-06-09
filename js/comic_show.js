@@ -9,11 +9,11 @@ keyNav();
 
 function writePageClickable(div,clickable) {
     if (!clickable) {
-        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
+        document.querySelector(div).innerHTML = `<div class="currentPage">${writePage()}</div>`;
     } else if (pg < maxpg) {
-        document.querySelector(div).innerHTML = `<div class="comicPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`;
+        document.querySelector(div).innerHTML = `<div class="currentPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`;
     } else {
-        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
+        document.querySelector(div).innerHTML = `<div class="currentPage">${writePage()}</div>`;
     }
 }
 
