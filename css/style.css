@@ -80,6 +80,8 @@ article pre {
   border-radius: 10px;
   padding: 15px;
   margin: 0 50px;
+  white-space: pre-wrap;
+  overflow: hidden;
 }
 article a {
   color: #5D5D5D;
@@ -111,7 +113,6 @@ article.comicPage {
 }
 .comicNav img {
   width: 80px;
-  max-width: 98%;
   padding-right: 30px;
 }
 .rarebitCredit {
@@ -125,4 +126,72 @@ article.comicPage {
   justify-content: center;
   width:800px;
   max-width:98%
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  /* ARTICLE */
+  article {
+    width:75% !important;
+    margin:none !important;
+  }
+  pre {
+    font-size: smaller;
+    width: 90% !important;
+    margin:0px !important;
+    padding: 10px !important;
+    white-space: pre-wrap;
+    overflow: hidden;
+  }
+  article figure {
+    padding-top:5px;
+    width: 90% !important;
+    margin: auto !important;
+  }
+  article figcaption {
+    font-size:smaller;
+  }
+
+  /* INDEX PAGES */
+  article.blogList ul, article.comicsList ul {
+    padding:0;
+  }
+  span.date {
+    display:none !important;
+  }
+  a.title {
+    white-space: no-wrap !important;
+    overflow: hidden;
+  }
+
+  /* COMIC */
+  .currentPage img {
+    width:1000px;
+    max-width:100%;
+  }
+  .comicNav img {
+    width: 60px;
+    padding:0;
+  }
+
+  /* HEADER & FOOTER */
+  header {
+    padding-top:20px;
+  }
+  header nav a {
+    border:2px solid white;
+    border-radius: 25px;
+    padding:5px 10px;
+    vertical-align: middle;
+  }
+  .rarebitCredit p {
+    font-size:smaller;
+  }
+  .rarebitCredit img {
+    width:40%;
+    height:auto;
+  }
+  .copyright {
+    font-size: smaller;
+  }
 }
