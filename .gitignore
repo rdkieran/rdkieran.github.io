@@ -1,23 +1,29 @@
+/venv
+
 # notes
-venv
-/temp-files/
+test-notes.md
 
-devlog.md
+# blog
+/blog/2023/markdown
+## making a website ii.html
+/blog/2023/making_a_website_ii.html
+/img/blog/making_a_website_ii
+## cv
+/cv
 
-generate_img_tags.py
-renamer.py
-
+# .css
 /css/styles-v*
-
-/blog/2023/06/
-
+# .javascript
 /js/comic_archive.js
+# .python
+/py
+# .clip
+/img/screenshots.clip
+/img/website_illustrations.clip
+/img/footer/social_links.clip
+/img/comicnav/comicnav.clip
+
+# rarebit leftovers
 /comics/about.html
 /comics/archive.html
 /comics/characters.html
-
-/comics/img/comicnav/comicnav.clip
-/comics/img/characters
-/comics/img/thumbs
-/comics/css
-/css/styles.css
