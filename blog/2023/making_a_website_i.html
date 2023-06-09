@@ -2,19 +2,25 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Robbie Kieran</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>Making a Website I: Hello World | Robbie Kieran</title>
         <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 
+        <link rel="stylesheet" href="/css/style.css">
+    
         <script src="/js/comic_header.js"></script>
         <script src="/js/comic_footer.js"></script>
     </head>
 
     <body>
-        <div class="writeHeader"></div>
+        <header class="writeHeader"></header>
 
-        <article>
+        <article class="blogPost">
             <h1>Making a Website I: Hello World</h1>
-            <p><span class="publish-date">May 23, 2023</span></p>
+            <p class="publishDate">May 23, 2023</p>
+
+            <div class="headerIllustration"><img src="/img/blog/making_a_website_i/header_illustration.png" alt="I have no idea what I'm doing!"></div>
 
             <h2>I want a new website</h2>
             <p>I've had a website once before, on <a href="https://carrd.co/" target="_blank">Carrd</a>. The whole thing was one page which gave the illusion of multiple pages by hiding content behind section break dividers. I didn't know how to code anything when I made this, and it did the trick for having a handy place to show off my portfolio. But I've always wanted a proper website, one which hosts a blog and my comics in an interactive way. Maybe lists of characters and a little wiki for my comics, as well as a place for personal writing. As I've developed coding skills, I've wanted a place to document my projects as well. An all-in-one content hub for my interests.</p>
@@ -58,17 +64,19 @@
             <p>Aside from this detour, nothing else very technical had to happen to get this first version put together. It's poorly styled, with comic pages taking up the whole page and text sizes completely out of proportion. I know too that I've not styled half of what I'd need to, which is why I'm going to throw around some content for me to style in this blog post. I'll find an excuse to make a table before the end of this first entry.</p>
             
             <h2>The current state of affairs</h2>
+            <figure>
+                <a href="/img/blog/making_a_website_i/websitev1_1.png" target="_blank"><img src="/img/blog/making_a_website_i/websitev1_1.png"></a>
+                <figcaption>&mdash; initial styling for <code>about.html</code> and <code>space_story.html</code></figcaption>
+            </figure>
 
-            <div class="gallery">
-                <img src="img/websitev1_about.png" alt="">
-                <img src="img/websitev1_blog.png" alt="">
-                <img src="img/websitev1_comics.png" alt="">
-                <img src="img/websitev1_spacestory.png" alt="">
-            </div>
+            <figure>
+                <a href="/img/blog/making_a_website_i/websitev1_2.png" target="_blank"><img src="/img/blog/making_a_website_i/websitev1_2.png"></a>
+                <figcaption>&mdash; initial styling for <code>comics.html</code> and <code>blog.html</code></figcaption>
+            </figure>
 
             <p>So this is where I start. A static site with some basic image and text content. I don't see myself wanting to put much more than that on my website, so I'll start out by working on the styling, and getting onto JavaScript later, once everything looks nicer. This is maybe a bit backwards, but all roads lead to Rome.</p>
         </article>
 
-        <div class="writeFooter"></div>
+        <footer class="writeFooter"></footer>
     </body>
 </html>
