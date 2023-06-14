@@ -24,8 +24,8 @@ header {
 }
 header .bannerImage img {
   width:50%;
-  max-width:400px;
-  padding:10px;
+  max-width:300px;
+  padding:20px;
   height:auto;
   text-align:center;
 }
@@ -181,8 +181,11 @@ article.comicPage {
   }
 
   /* COMIC */
+  article.comicPage {
+    width:100% !important;
+    padding:20px 0px;
+  }
   .currentPage img {
-    width:1000px;
     max-width:100%;
   }
   .comicNav img {
