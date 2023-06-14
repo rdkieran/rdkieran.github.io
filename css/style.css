@@ -26,8 +26,12 @@ header .bannerImage img {
   width:50%;
   max-width:400px;
   padding:10px;
-  height:auto
+  height:auto;
   text-align:center;
+}
+header nav a {
+  display: inline-block;
+  width:100px;
 }
 header, footer {
   background-color:#1E1E1E;
