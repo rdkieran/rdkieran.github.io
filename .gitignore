@@ -1,7 +1,7 @@
 /venv
 
 # notes
-test-notes.md
+-notes/
 
 # blog
 /blog/2023/markdown
@@ -23,6 +23,9 @@ test-notes.md
 /img/footer/social_links.clip
 /img/comicnav/comicnav.clip
 /img/banner_img.clip
+
+# old assets
+/img/favicon-old.png
 
 # rarebit leftovers
 /comics/about.html
