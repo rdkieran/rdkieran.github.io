@@ -99,6 +99,9 @@ article pre {
   white-space: pre-wrap;
   overflow: hidden;
 }
+article figcaption.codeCaption {
+  margin: 0 50px;
+}
 article a {
   color: #5D5D5D;
 }
@@ -167,9 +170,6 @@ article.comicPage {
     width: 90% !important;
     margin: auto !important;
   }
-  article figcaption {
-    font-size:smaller;
-  }
 
   /* INDEX PAGES */
   article.blogList ul, article.comicsList ul {
@@ -181,6 +181,13 @@ article.comicPage {
   a.title {
     white-space: no-wrap !important;
     overflow: hidden;
+  }
+
+
+  /* IMAGES */
+  div.headerImage img, article figure img {
+    width:100% !important;
+    padding:20px 0px;
   }
 
   /* COMIC */
