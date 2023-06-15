@@ -81,7 +81,7 @@ article {
   
   border: 0px solid;
   border-radius:25px;
-  padding:20px 40px;
+  padding:20px 40px, 40px;
 
   background:#ffffff
 }
