@@ -112,6 +112,9 @@ article:not(.comicPage) img {
   max-width: 98%;
   border-radius:25px;
 }
+figcaption {
+  font-size:smaller;
+}
 
 /* COMIC */
 article.comicPage {
