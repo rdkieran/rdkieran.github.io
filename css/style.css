@@ -121,6 +121,37 @@ figcaption {
   font-size:smaller;
 }
 
+/* INDEX PAGE */
+div.index {
+  max-width:80%;
+  width:800px;
+  margin:0 auto;
+}
+a.contentLink {
+  text-decoration:none;
+  color:#1E1E1E;
+}
+h3.contentTitle {
+  text-align:center;
+  font-style:italic;
+}
+h3.contentTitle span.postDate {
+  color:#5D5D5D;
+  font-size:medium;
+  font-weight:500;
+  padding-right:20px;
+}
+p.contentDescription {
+  border-top:#1E1E1E solid 1px;
+  padding: 15px;
+  margin: 0 50px;
+  margin-top: 20px;
+  font-style:italic;
+}
+article.contentLatest:hover {
+}
+img.contentImage {}
+
 /* COMIC */
 article.comicPage {
   width: 1000px;
@@ -185,6 +216,14 @@ article.comicPage {
     overflow: hidden;
   }
 
+  /* INDEX PAGE */
+  div.index {
+    flex-direction: column;
+    max-height: none;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   /* IMAGES */
   div.headerImage img, article figure img {
