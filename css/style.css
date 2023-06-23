@@ -150,7 +150,9 @@ p.contentDescription {
 }
 article.contentLatest:hover {
 }
-img.contentImage {}
+img.contentImage:hover {
+  filter:blur(5px);
+}
 
 /* COMIC */
 article.comicPage {

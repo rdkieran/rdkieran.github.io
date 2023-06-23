@@ -17,17 +17,13 @@ const blogPostImage = `/img/blog/${latestBlogPostName}/header_illustration.png`;
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(".indexPage").innerHTML = `
-        <a href="${comicPageURL}" class="contentLink">
-            <article class="contentLatest">
-                <img src=${comicPageImage} class="contentImage"></img>
-            </article>
-        </a>
-        <a href="${blogPostURL}" class="contentLink">
-            <article class="contentLatest">
-                <img src=${blogPostImage} class="contentImage"></img>
-                <h3 class="contentTitle"><span class="postDate">${postDate}</span> ${blogTitle}</h3>
-            </article>
-        </a>
+        <article class="contentLatest">
+            <a href="${comicPageURL}" class="contentLink"><img src=${comicPageImage} class="contentImage"></img></a>
+        </article>
+        <article class="contentLatest"> 
+            <a href="${blogPostURL}" class="contentLink"><img src=${blogPostImage} class="contentImage"></img></a>
+            <h3 class="contentTitle"><span class="postDate">${postDate}</span> ${blogTitle}</h3>
+        </article>
         `
     });
     
