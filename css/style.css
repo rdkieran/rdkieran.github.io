@@ -154,6 +154,11 @@ img.contentImage:hover {
   filter:blur(5px);
 }
 
+/* WIKI */
+div.wikiEntry {
+  display: none;
+}
+
 /* COMIC */
 article.comicPage {
   width: 1000px;
