@@ -12,13 +12,16 @@ if (Math.floor(Math.random() * 3) > 0) {
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(".writeHeader").innerHTML = `
     <div class="bannerImage">
-        <a href="/index.html"><img src="${bannerImage}" alt="banner" /></a> 
+        <a href="/"><img src="${bannerImage}" alt="banner" /></a> 
     </div>
     <nav>
-        <a href="/index.html">home</a>
-        <a href="/about.html">about</a>
-        <a href="/comics.html">comics</a>
-        <a href="/blog.html">blog</a>
+        <a href="/">home</a>
+        <a href="/about">about</a>
     </nav>
 `;
 })
+
+/* old links to comics and blog indices, now found on main index
+        <a href="/comics.html">comics</a>
+        <a href="/blog.html">blog</a>
+*/
