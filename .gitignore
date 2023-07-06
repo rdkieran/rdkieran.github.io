@@ -1,7 +1,10 @@
 /venv
 
+# v1 - dynamic front page and index pages for comics and blog posts
+/-old
+
 # notes
--notes/
+/-notes
 
 # blog
 /blog/2023/markdown
@@ -12,14 +15,11 @@
 /css/styles-v*
 # .javascript
 /js/comic_archive.js
+/js/homepage_links.js
 # .python
 /py
 # .clip
-/img/screenshots.clip
-/img/website_illustrations.clip
-/img/footer/social_links.clip
-/img/comicnav/comicnav.clip
-/img/banner_img.clip
+/img/*.clip
 
 # old assets
 /img/favicon-old.png
