@@ -19,7 +19,7 @@
 # .python
 /py
 # .clip
-/img/*.clip
+*.clip
 
 # old assets
 /img/favicon-old.png
