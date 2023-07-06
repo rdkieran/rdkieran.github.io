@@ -46,7 +46,6 @@ footer nav img {
 footer .copyright {
   font-style:italic;
 }
-
 header a, footer a {
   color: #ffffff;
   text-decoration: none;
@@ -55,11 +54,15 @@ header a:hover, footer a:hover {
   color:#5D5D5D;
 }
 
-/* INDEX PAGES */
+/* INDEX PAGE */
+article.blogList {
+  padding-left: 0;
+  padding-right: 0;
+}
 ul.posts {
   list-style-type: none;
 }
-.date {
+span.date {
   display: inline-block;
   width: 75px;
 
@@ -68,9 +71,45 @@ ul.posts {
   font-size:small;
   color: #5D5D5D;
 }
-.title {
+span.indexDate {
+  display:inline-block;
+  width:75px;
+  padding-right:20px;
+  text-align:right;
+  font-size:small;
+  color:#5D5D5D;
+}
+a.title {
   display: inline-block;
   padding-left:10px;
+}
+figure.titleOnHover {
+  position: relative;
+}
+figure.titleOnHover figcaption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.5s;
+
+  font-size:large;
+  font-weight:bold;
+}
+figure.titleOnHover img{
+  transition: 0.4s;
+}
+figure.titleOnHover:hover figcaption  {
+  color: white;
+  text-shadow: 2px 2px 2px #1E1E1E;
+}
+figure.titleOnHover:hover img {
+  filter:blur(5px);
 }
 
 /* ARTICLE */
@@ -119,39 +158,6 @@ article:not(.comicPage) img {
 }
 figcaption {
   font-size:smaller;
-}
-
-/* INDEX PAGE */
-div.index {
-  max-width:80%;
-  width:800px;
-  margin:0 auto;
-}
-a.contentLink {
-  text-decoration:none;
-  color:#1E1E1E;
-}
-h3.contentTitle {
-  text-align:center;
-  font-style:italic;
-}
-h3.contentTitle span.postDate {
-  color:#5D5D5D;
-  font-size:medium;
-  font-weight:500;
-  padding-right:20px;
-}
-p.contentDescription {
-  border-top:#1E1E1E solid 1px;
-  padding: 15px;
-  margin: 0 50px;
-  margin-top: 20px;
-  font-style:italic;
-}
-article.contentLatest:hover {
-}
-img.contentImage:hover {
-  filter:blur(5px);
 }
 
 /* WIKI */
