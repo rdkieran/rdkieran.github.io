@@ -15,65 +15,69 @@ body {
   display: table;
 }
 
-/* HEADER & FOOTER */
+/* HEADER */
 header {
   max-width:800px;
   text-align:center;
   padding: 10px 0;
   margin:auto;
+  color:#ffffff;
+  
+  background-color:#1E1E1E;
+  border-radius:100px;
 }
-header .bannerImage img {
+header img.bannerImage {
   width:50%;
   max-width:300px;
   padding:20px;
   height:auto;
   text-align:center;
 }
-header, footer {
-  background-color:#1E1E1E;
-  border-radius:100px;
+header a {
+  color: #ffffff;
+  text-decoration: none;
 }
+header a:hover {
+  color:#5D5D5D;
+}
+
+/* FOOTER */
 footer {
   max-width:800px;
   text-align:center;
   padding: 10px 0;
   margin:auto;
-  color:#ffffff
+  color:#ffffff;
+  
+  background-color:#1E1E1E;
+  border-radius:100px;
 }
-footer nav img {
+footer img {
   width:50px;
 }
 footer .copyright {
   font-style:italic;
 }
-header a, footer a {
+footer a {
   color: #ffffff;
   text-decoration: none;
 }
-header a:hover, footer a:hover {
+footer a:hover {
   color:#5D5D5D;
 }
 
 /* INDEX PAGE */
-article.blogList {
+article.contentList {
   padding-left: 0;
   padding-right: 0;
 }
-ul.posts {
+.contentList ul {
   list-style-type: none;
-}
-span.date {
-  display: inline-block;
-  width: 75px;
-
-  padding-right:10px;
-  text-align:right;
-  font-size:small;
-  color: #5D5D5D;
 }
 span.indexDate {
   display:inline-block;
   width:75px;
+
   padding-right:20px;
   text-align:right;
   font-size:small;
@@ -83,6 +87,8 @@ a.title {
   display: inline-block;
   padding-left:10px;
 }
+
+/* BLOG TITLE ON HOVER */
 figure.titleOnHover {
   position: relative;
 }
@@ -96,7 +102,7 @@ figure.titleOnHover figcaption{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 0.5s;
+  transition: color 0.4s;
 
   font-size:large;
   font-weight:bold;
@@ -107,6 +113,7 @@ figure.titleOnHover img{
 figure.titleOnHover:hover figcaption  {
   color: white;
   text-shadow: 2px 2px 2px #1E1E1E;
+  transition: 0.8s;
 }
 figure.titleOnHover:hover img {
   filter:blur(5px);
@@ -156,6 +163,28 @@ article:not(.comicPage) img {
   max-width: 98%;
   border-radius:25px;
 }
+
+/* FIGURE */
+div.changeImageOnHover {
+  align-items: center;
+  position:relative;
+}
+div.changeImageOnHover img.defaultImage, div.changeImageOnHover img.hoverImage  {
+  top: 0;
+  left: 0;
+  width:100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+div.changeImageOnHover img.hoverImage {
+  position: absolute;
+  opacity: 0%;
+}
+div.changeImageOnHover img.hoverImage:hover {
+  opacity:100%;
+}
 figcaption {
   font-size:smaller;
 }
@@ -167,7 +196,7 @@ div.wikiEntry {
 
 /* COMIC */
 article.comicPage {
-  width: 1000px;
+  width: 800px;
   max-width: 98%;
   
   text-align:center;

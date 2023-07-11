@@ -11,9 +11,7 @@ if (Math.floor(Math.random() * 3) > 0) {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(".writeHeader").innerHTML = `
-    <div class="bannerImage">
-        <a href="/"><img src="${bannerImage}" alt="banner" /></a> 
-    </div>
+    <a href="/"><img src="${bannerImage}" alt="banner" class="bannerImage" /></a> 
     <nav>
         <a href="/">home</a>
         <a href="/about">about</a>
