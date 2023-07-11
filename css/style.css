@@ -257,7 +257,6 @@ article.comicPage {
     white-space: no-wrap !important;
     overflow: hidden;
   }
-  
 
   /* INDEX PAGE */
   div.index {
@@ -266,6 +265,14 @@ article.comicPage {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  figure.titleOnHover figcaption  {
+    color: white;
+    text-shadow: 2px 2px 2px #1E1E1E;
+    transition: 0.8s;
+  }
+  figure.titleOnHover img {
+    filter:blur(5px);
   }
 
   /* IMAGES */
