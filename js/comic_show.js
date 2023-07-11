@@ -41,7 +41,7 @@ function writePage() {
   if (pgData.length < pg) {
     console.log("page code to insert - " + page);
     console.log("alt text to print - " + altText);
-    //
+    
     page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`;
     return page;
   } else if (pgData.length >= pg) { 
@@ -76,7 +76,6 @@ console.log("nav text - " + navText);
 console.log("nav image file extension - " + navExt);
 
 function imgOrText(setImg,navTextSet) {
-
   if (setImg) {
     return `<img src="` + navFolder + `/nav_` + navText[navTextSet].toLowerCase() + `.` + navExt + `" alt="` + navText[navTextSet] + `" />`;
   } else {
