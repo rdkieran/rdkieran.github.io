@@ -22,9 +22,9 @@
 *.clip
 
 # wiki
-/wiki.html
-/img/wiki
-/js/wiki.js
+#/wiki.html
+#/img/wiki
+#/js/wiki.js
 
 # old assets
 /img/favicon-old.png
