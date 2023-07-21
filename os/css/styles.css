@@ -144,7 +144,6 @@ header nav button:hover {
 .windowContent {
     padding: 20px;
     font-size:small;
-    overflow-x: hidden;
 }
 
 /*
@@ -204,6 +203,7 @@ div.blogPost img {
 }
 div.blogpost code {
     width:100%;
+    flex-wrap:wrap;
     border-top: 1px solid #1e1e1e;
     border-bottom: 1px solid #1e1e1e;
     overflow:hidden;
