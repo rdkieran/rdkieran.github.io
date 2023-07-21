@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Get all article divs
-    const wikiEntries = document.querySelectorAll(".wikiEntry");
+    const blogEntries = document.querySelectorAll(".blogPost");
   
     // Show Article 1 by default
-    wikiEntries[0].style.display = "block";
+    blogEntries[0].style.display = "block";
   
     // Function to show the target article and update the URL hash
     function showArticle(targetId) {
-      wikiEntries.forEach(function(article) {
+      blogEntries.forEach(function(article) {
         if (article.id === targetId) {
           article.style.display = "block";
         } else {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     // Add click event listeners to the navigation links
-    const links = document.querySelectorAll("div.wikiEntry a");
+    const links = document.querySelectorAll("article a");
     links.forEach(function(link) {
       link.addEventListener("click", function(event) {
         event.preventDefault();

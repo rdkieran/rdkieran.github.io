@@ -1,0 +1,47 @@
+/* WIKI */
+div.wikiEntry, div.blogPost {
+  display: none;
+  overflow: auto; /* Clear the float */
+}
+div.wikiEntry a {
+}
+article.wiki {
+  width: 600px;
+}
+nav.wikiNav {
+  padding: 0 0 10px 10px;
+}
+figure.wikiDetailsRight, figure.wikiDetailsLeft {
+  max-width:400px;
+  width: 30%;
+  margin:10px;
+  margin-left:20px;
+}
+figure.wikiDetailsRight{
+  float: right;
+}
+figure.wikiDetailsLeft{
+  float: left;
+}
+figcaption.wikiCaption {
+  padding:5px;
+  text-align:center;
+  font-style:italic;
+}
+img.wikiPortrait {
+  border-radius:25px;
+  width:100%;
+  height:auto;
+}
+h2.wikiTitle {
+  position: relative;
+}
+h2.wikiTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this value to control the distance of the underline from the text */
+  width: calc(100% - 30% - 30px); /* Subtract the space for the figure */
+  height: 2px;
+  background-color: #1E1E1E; /* Adjust the color as needed */
+}
