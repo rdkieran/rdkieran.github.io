@@ -18,6 +18,7 @@
 /js/homepage_links.js
 # .python
 /py
+*.py
 # .clip
 *.clip
 
@@ -25,6 +26,14 @@
 #/wiki.html
 #/img/wiki
 #/js/wiki.js
+
+# os mode
+#/os
+/os/test.html
+/os/js/pictureFrame.js
+/os/js/test.js
+/os/js/wiki2.js
+/os/js/windowResize.js
 
 # old assets
 /img/favicon-old.png
