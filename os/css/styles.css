@@ -83,8 +83,6 @@ header nav button:hover {
     border: 1px black #1e1e1e;
     filter: drop-shadow(0 0 0.75rem black);
     background: white;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 #latest {
     height: 80%;
@@ -144,6 +142,8 @@ header nav button:hover {
 .windowContent {
     padding: 20px;
     font-size:small;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /*
