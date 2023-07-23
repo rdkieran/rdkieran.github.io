@@ -23,12 +23,13 @@
 *.clip
 
 # wiki
+#/wiki-markdown
 #/wiki.html
 #/img/wiki
 #/js/wiki.js
 
 # os mode
-#/os
+/os
 /os/test.html
 /os/js/pictureFrame.js
 /os/js/test.js
