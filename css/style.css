@@ -193,7 +193,7 @@ figcaption {
 div.wikiEntry {
   display: none;
 }
-div.wikiEntry a {
+div.wikiEntry a:hover {
   text-decoration: none;
 }
 article.wiki {
@@ -230,13 +230,14 @@ div.wikiEntry  {
 }
 h2.wikiTitle {
   position: relative;
+  width: calc(100% - 30% - 30px); /* Subtract the space for the figure */
 }
 h2.wikiTitle::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -5px; /* Adjust this value to control the distance of the underline from the text */
-  width: calc(100% - 30% - 30px); /* Subtract the space for the figure */
+  width: 100%;
   height: 2px;
   background-color: #1E1E1E; /* Adjust the color as needed */
 }

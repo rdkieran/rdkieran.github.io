@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <nav>
         <a href="/">home</a>
         <a href="/about">about</a>
+        <a href="/wiki">wiki</a>
     </nav>
 `;
 })
