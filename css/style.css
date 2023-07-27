@@ -85,8 +85,6 @@ article.indexList img {
 figcaption.indexFigcaption {
   text-align:center;
 }
-.indexList img {
-}
 /* article.indexList .indexDate {
 /*   display:inline-block;
 /*   width:75px;
@@ -155,6 +153,7 @@ article.comicPage .currentPage img {
   width:800px;
   max-width:98%
 }
+
 /* --------------------------- //      //       // WIKI // --------------------------- */
 div.wikiEntry {
   display: none;
@@ -313,20 +312,21 @@ figure.titleOnHover:hover img {
   /* IMAGES */
   div.headerImage img, article:not(.wiki) figure img {
     width:100% !important;
-    padding:20px 0px;
+    padding:20px 0px!important;
   }
 
   /* COMIC */
   article.comicPage {
-    width:100% !important;
-    padding:20px 0px;
+    width:95% !important;
+    padding:20px 0px !important;
   }
   .currentPage img {
     max-width:100%;
+    margin:10px auto;
   }
   .comicNav img {
-    width: 60px;
-    padding:0;
+    width: 60px !important;
+    padding:0 !important;
   }
 
   /* HEADER & FOOTER */
