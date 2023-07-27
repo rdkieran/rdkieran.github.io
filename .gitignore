@@ -23,7 +23,7 @@
 *.clip
 
 # wiki
-#/wiki-markdown
+wiki/wiki-markdown
 #/wiki.html
 #/img/wiki
 #/js/wiki.js

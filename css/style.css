@@ -1,4 +1,4 @@
-/* GLOBAL STYLING */
+/* --------------------------- //         GLOBAL        // --------------------------- */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("/img/background.png");
@@ -7,15 +7,14 @@ body {
   background-color: #1e1e1e;
   color: #1E1E1E;
 }
-
-/* clearfix hack to prevent image overflow. check out the W3Schools page on it. */
+/* clearfix hack to prevent image overflow*/
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* HEADER */
+/* --------------------------- //         HEADER        // --------------------------- */
 header {
   max-width:800px;
   text-align:center;
@@ -23,7 +22,7 @@ header {
   margin:auto;
   color:#ffffff;
   
-  background-color:#1E1E1E;
+  background:none;
   border-radius:100px;
 }
 header img.bannerImage {
@@ -41,7 +40,7 @@ header a:hover {
   color:#5D5D5D;
 }
 
-/* FOOTER */
+/* --------------------------- //         FOOTER        // --------------------------- */
 footer {
   max-width:800px;
   text-align:center;
@@ -49,46 +48,181 @@ footer {
   margin:auto;
   color:#ffffff;
   
-  background-color:#1E1E1E;
+  background:none;
   border-radius:100px;
 }
-footer img {
-  width:50px;
+footer img { width:50px; }
+
+footer .copyright { font-style:italic; }
+
+footer a { color: #ffffff; text-decoration: none; }
+footer a:hover { color:#5D5D5D; }
+
+/* --------------------------- //         INDEX         // --------------------------- */
+article.indexList img {
+  width: 800px;
+  max-width: 98%;
+  border-radius:10px;
 }
-footer .copyright {
+figcaption.indexFigcaption {
+  text-align:center;
+}
+/* article.indexList .indexDate {
+/*   display:inline-block;
+/*   width:75px;
+/* 
+/*   padding-right:20px;
+/*   text-align:right;
+/*   font-size:small;
+/*   color:#5D5D5D;
+/* }
+/* article.indexList a.contentLink {
+/*   display: inline-block;
+/*   padding-left:10px;
+/* }
+
+/* --------------------------- //    GLOBAL ARTICLE     // --------------------------- */
+article {
+  width: 600px;
+  max-width: 98%;
+  margin:20px auto;
+  
+  border: 0px solid;
+  border-radius:25px;
+  padding:20px 40px 40px;
+
+  background:#ffffff
+}
+article a { color: #5D5D5D; }
+article a:hover { color: #1E1E1E; text-decoration: none; }
+
+/* --------------------------- // BLOG // COMIC // WIKI // --------------------------- */
+/* --------------------------- // BLOG //       //      // --------------------------- */
+article pre {
+  border: 1px solid #1E1E1E;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 50px;
+  margin-top: 20px;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+article p.publishDate {
+  color:#5D5D5D;
   font-style:italic;
+  font-size:small;
+  line-height:0;
 }
-footer a {
-  color: #ffffff;
+article.blogPost img {
+  width: 800px;
+  max-width: 98%;
+  border-radius:25px;
+}
+article figcaption.codeCaption { margin: 5px 50px; }
+
+/* --------------------------- //      // COMIC //      // --------------------------- */
+article.comicPage {
+  width: 800px;
+  max-width: 98%;
+  
+  text-align:center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+article.comicPage .comicNav {
+  padding: 10px 0px 0px;
+}
+article.comicPage .comicNav img {
+  width: 80px;
+  padding-right: 30px;
+}
+.comicPage .rarebitCredit {
+  font-size:small;
+  line-height:0;
+}
+article.comicPage .currentPage img {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width:800px;
+  max-width:98%
+}
+/* --------------------------- //      //       // WIKI // --------------------------- */
+div.wikiEntry {
+  display: none;
+}
+div.wikiEntry a:hover {
   text-decoration: none;
 }
-footer a:hover {
-  color:#5D5D5D;
+article.wiki {
+  width: 600px;
+}
+nav.wikiNav {
+  text-align:center;
+  margin-bottom:10px;
+}
+figure.wikiDetailsRight{
+  max-width:400px;
+  width: 30%;
+  margin:10px;
+  margin-left:20px;
+  
+  float: right;
+}
+figcaption.wikiCaption {
+  padding:5px;
+  text-align:center;
+  font-style:italic;
+}
+img.wikiPortrait {
+  border-radius:25px;
+  width:100%;
+  height:auto;
+}
+div.wikiEntry  {
+  overflow: auto;
+}
+h2.wikiTitle {
+  position: relative;
+  width: calc(100% - 30% - 30px);
+}
+h2.wikiTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #1E1E1E;
 }
 
-/* INDEX PAGE */
-article.contentList {
-  padding-left: 0;
-  padding-right: 0;
+/* --------------------------- //     HOVER EFFECTS     // --------------------------- */
+/* --------------------------- // SWITCH IMAGE ON HOVER // --------------------------- */
+div.changeImageOnHover {
+  align-items: center;
+  position:relative;
+  font-size:smaller;
 }
-.contentList ul {
-  list-style-type: none;
+div.changeImageOnHover img.defaultImage, div.changeImageOnHover img.hoverImage {
+  top: 0;
+  left: 0;
+  width:100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
 }
-span.indexDate {
-  display:inline-block;
-  width:75px;
-
-  padding-right:20px;
-  text-align:right;
-  font-size:small;
-  color:#5D5D5D;
+div.changeImageOnHover img.hoverImage {
+  position: absolute;
+  opacity: 0%;
 }
-a.title {
-  display: inline-block;
-  padding-left:10px;
+div.changeImageOnHover img.hoverImage:hover {
+  opacity:100%;
 }
-
-/* BLOG TITLE ON HOVER */
+/* --------------------------- //  BLOG TITLE ON HOVER  // --------------------------- */
 figure.titleOnHover {
   position: relative;
 }
@@ -119,161 +253,7 @@ figure.titleOnHover:hover img {
   filter:blur(5px);
 }
 
-/* ARTICLE */
-article {
-  width: 600px;
-  max-width: 98%;
-  margin:20px auto;
-  
-  border: 0px solid;
-  border-radius:25px;
-  padding:20px 40px;
-  padding-bottom: 40px;
-
-  background:#ffffff
-}
-p.publishDate {
-  color:#5D5D5D;
-  font-style:italic;
-  font-size:small;
-  line-height:0;
-}
-article pre {
-  border: 1px solid #1E1E1E;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 0 50px;
-  margin-top: 20px;
-  white-space: pre-wrap;
-  overflow: hidden;
-}
-article figcaption.codeCaption {
-  margin: 5px 50px;
-}
-article a {
-  color: #5D5D5D;
-}
-article a:hover {
-  color: #1E1E1E;
-  text-decoration: none;
-}
-/* images */
-article:not(.comicPage):not(.wiki) img {
-  width: 800px;
-  max-width: 98%;
-  border-radius:25px;
-}
-
-/* FIGURE */
-div.changeImageOnHover {
-  align-items: center;
-  position:relative;
-}
-div.changeImageOnHover img.defaultImage, div.changeImageOnHover img.hoverImage  {
-  top: 0;
-  left: 0;
-  width:100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-}
-div.changeImageOnHover img.hoverImage {
-  position: absolute;
-  opacity: 0%;
-}
-div.changeImageOnHover img.hoverImage:hover {
-  opacity:100%;
-}
-figcaption {
-  font-size:smaller;
-}
-
-/* WIKI */
-div.wikiEntry {
-  display: none;
-}
-div.wikiEntry a:hover {
-  text-decoration: none;
-}
-article.wiki {
-  width: 600px;
-}
-nav.wikiNav {
-  text-align:center;
-  margin-bottom:10px;
-}
-figure.wikiDetailsRight, figure.wikiDetailsLeft {
-  max-width:400px;
-  width: 30%;
-  margin:10px;
-  margin-left:20px;
-}
-figure.wikiDetailsRight{
-  float: right;
-}
-figure.wikiDetailsLeft{
-  float: left;
-}
-figcaption.wikiCaption {
-  padding:5px;
-  text-align:center;
-  font-style:italic;
-}
-img.wikiPortrait {
-  border-radius:25px;
-  width:100%;
-  height:auto;
-}
-div.wikiEntry  {
-  overflow: auto; /* Clear the float */
-}
-h2.wikiTitle {
-  position: relative;
-  width: calc(100% - 30% - 30px); /* Subtract the space for the figure */
-}
-h2.wikiTitle::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px; /* Adjust this value to control the distance of the underline from the text */
-  width: 100%;
-  height: 2px;
-  background-color: #1E1E1E; /* Adjust the color as needed */
-}
-
-/* COMIC */
-article.comicPage {
-  width: 800px;
-  max-width: 98%;
-  
-  text-align:center;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-}
-.comicNav {
-  padding: 10px 0px 0px;
-}
-.comicNav img {
-  width: 80px;
-  padding-right: 30px;
-}
-.rarebitCredit {
-  font-size:small;
-  line-height:0;
-}
-.currentPage img {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  width:800px;
-  max-width:98%
-}
-
-/* MOBILE */
+/* --------------------------- //         MOBILE        // --------------------------- */
 @media only screen and (max-width: 800px) {
   /* ARTICLE */
   article {
@@ -364,7 +344,7 @@ article.comicPage {
   }
 }
 
-/* take away margins from the edges of the screen */
+  /* take away margins from the edges of the screen */
 html, body {
   margin: 0;
 }
