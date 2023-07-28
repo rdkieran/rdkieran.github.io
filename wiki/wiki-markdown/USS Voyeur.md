@@ -1,0 +1,1 @@
+The USS Voyeur is a [[Galactic Federation of Consenting Planets]] Underdog-class spaceship, under the command of [[Captain]].

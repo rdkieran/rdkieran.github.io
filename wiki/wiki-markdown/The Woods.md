@@ -1,0 +1,1 @@
+The Woods is a star system home to the Big Surprise of [[Bear|Bears]]. Comprising of three major planetary bodies: [[Too Big]], [[Too Small]] and the capital planet [[Just Right]].

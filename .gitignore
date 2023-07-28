@@ -21,12 +21,11 @@
 /js/homepage_links.js
 # .python
 /py
-*.py
 # .clip
 *.clip
 
 # wiki
-wiki/wiki-markdown
+#wiki/wiki-markdown
 #/wiki.html
 #/img/wiki
 #/js/wiki.js
