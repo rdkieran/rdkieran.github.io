@@ -3,7 +3,6 @@
 # v1 - dynamic front page and index pages for comics and blog posts
 /-old
 
-<<<<<<< HEAD
 # comics
 /img/comics/old-comics
 /img/comics/additional-files
@@ -13,8 +12,6 @@
 /img/comics/ss1/additional-files
 /img/comics/ss2/additional-files
 
-=======
->>>>>>> parent of 469c484 (moved device. updated gitgnore)
 # notes
 /-notes
 
