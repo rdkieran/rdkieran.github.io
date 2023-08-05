@@ -3,6 +3,18 @@
 # v1 - dynamic front page and index pages for comics and blog posts
 /-old
 
+<<<<<<< HEAD
+# comics
+/img/comics/old-comics
+/img/comics/additional-files
+/img/comics/le/additional-files
+/img/comics/rbd/additional-files
+/img/comics/sds/additional-files
+/img/comics/ss1/additional-files
+/img/comics/ss2/additional-files
+
+=======
+>>>>>>> parent of 469c484 (moved device. updated gitgnore)
 # notes
 /-notes
 
@@ -14,6 +26,8 @@
 ## cv
 /cv
 
+# .md
+*.md
 # .css
 /css/styles-v*
 # .javascript
@@ -21,6 +35,7 @@
 /js/homepage_links.js
 # .python
 /py
+*.py
 # .clip
 *.clip
 
@@ -31,7 +46,7 @@
 #/js/wiki.js
 
 # os mode
-/os
+#/os
 /os/test.html
 /os/js/pictureFrame.js
 /os/js/test.js
