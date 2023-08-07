@@ -16,28 +16,22 @@ body {
 
 /* --------------------------- //         HEADER        // --------------------------- */
 header {
-  max-width:800px;
+  background:white;
+  margin-bottom:20px;
+}
+header nav {
   text-align:center;
-  padding: 10px 0;
-  margin:auto;
-  color:#ffffff;
-  
-  background:none;
-  border-radius:100px;
+  padding: 20px 0;
 }
-header img.bannerImage {
-  width:50%;
-  max-width:300px;
-  padding:20px;
-  height:auto;
-  text-align:center;
+header nav a {
+  font-weight:bold;
+  font-size:medium;
+  text-decoration:none;
+  color:#1E1E1E;
+  opacity:50%
 }
-header a {
-  color: #ffffff;
-  text-decoration: none;
-}
-header a:hover {
-  color:#5D5D5D;
+header nav a:hover {
+  opacity:100%
 }
 
 /* --------------------------- //         FOOTER        // --------------------------- */
@@ -74,11 +68,11 @@ article a { color: #5D5D5D; }
 article a:hover { color: #1E1E1E; text-decoration: none; }
 
 /* --------------------------- //         INDEX         // --------------------------- */
-article.indexList {
-  padding:40px;
+article.comicList, .blogList {
+  padding:20px 40px 40px;
 }
-article.indexList img {
-  width: 800px;
+article.comicList img, .blogList img {
+  width: 100%;
   max-width: 98%;
   border:white solid 1px;
   border-radius:15px;
@@ -86,19 +80,9 @@ article.indexList img {
 figcaption.indexFigcaption {
   text-align:center;
 }
-/* article.indexList .indexDate {
-/*   display:inline-block;
-/*   width:75px;
-/* 
-/*   padding-right:20px;
-/*   text-align:right;
-/*   font-size:small;
-/*   color:#5D5D5D;
-/* }
-/* article.indexList a.contentLink {
-/*   display: inline-block;
-/*   padding-left:10px;
-/* }
+.articleTitle {
+  text-align:center;
+}
 
 /* --------------------------- // BLOG // COMIC // WIKI // --------------------------- */
 /* --------------------------- // BLOG //       //      // --------------------------- */
@@ -249,16 +233,16 @@ figure.titleOnHover figcaption{
   font-weight:bold;
 }
 figure.titleOnHover img{
-  transition: 0.4s;
+  transition: 0.4621s;
 }
 figure.titleOnHover:hover figcaption  {
   color: white;
   text-shadow: 2px 2px 2px #1E1E1E;
-  transition: 0.8s;
+  transition: 0.621s;
 }
 figure.titleOnHover:hover img {
   border:#1E1E1E dotted 1px;
-  filter:opacity(75%) drop-shadow(0px 0px 0px #1e1e1e);
+  filter:opacity(50%) drop-shadow(0px 0px 0px #1e1e1e);
 }
 
 /* --------------------------- //         MOBILE        // --------------------------- */

@@ -3,8 +3,8 @@
 # notes
 /-notes
 
-
-
+# .md
+*.md
 # .css
 /css/styles-v*
 # .javascript
@@ -34,7 +34,7 @@
 /wiki/wiki-markdown
 
 # os mode
-/os
+#/os
 /os/test.html
 /os/js/pictureFrame.js
 /os/js/test.js
