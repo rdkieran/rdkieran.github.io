@@ -99,7 +99,7 @@ function writeNav(imageToggle) {
 
     function firstButton() {
         if (pg > 1) {
-            return `<a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
+            return `<div class="backward"><a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 0);
@@ -118,7 +118,7 @@ function writeNav(imageToggle) {
 
     function prevButton() {
         if (pg > 1) {
-            return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
+            return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a></div>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 1);
@@ -130,7 +130,7 @@ function writeNav(imageToggle) {
 
     function nextButton() {
         if (pg < maxpg) {
-            return `<a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
+            return `<div class="forward"><a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 2);
@@ -142,7 +142,7 @@ function writeNav(imageToggle) {
 
     function lastButton() {
         if (pg < maxpg) {
-            return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
+            return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a></div>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 3);
