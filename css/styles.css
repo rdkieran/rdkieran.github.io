@@ -35,3 +35,5 @@ nav.contentList li {margin:0.4em 0;}
 span.postDate, span.postTag, span.postTitle {display:inline-block;}
 span.postDate {min-width:15%; margin-right:0.4em;}
 span.postTag  {float:right; width:15%; text-align:center; border-radius:0.3em; margin-left:0.4em; background:rgb(30,30,30,0.2);}
+
+.ongoing span.postTag {background:rgb(255, 255, 0, 0.4);}
