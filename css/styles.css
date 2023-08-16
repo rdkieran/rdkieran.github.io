@@ -1,0 +1,37 @@
+html {font-family:monospace; color:rgb(30,30,30); font-size:large;}
+body {width:600px; margin:auto;}
+
+header, article, footer {padding:1em 0; margin:1em 0;}
+
+div.divider {height:0; width:100%; border-top:solid black 1px;}
+
+h1, h2  {line-height:0.5;}
+li      {list-style:none;}
+a       {color:rgb(30,30,30,0.7); text-underline-offset:0.15em;} 
+a:hover {text-decoration:none;}
+
+h1 a {text-decoration:none; color:rgb(30,30,30)}
+
+div.chapterDivider {height:1em;}
+article.blogPost img {width:100%}
+div.code, article.blogPost img {margin-top:1.2em}
+div.code {border:solid rgb(30,30,30,0.7) 1px; padding:1em; overflow-x:auto; white-space:nowrap;}
+span.indent1 {padding:0 0 0 2em}
+span.indent2 {padding:0 0 0 4em}
+span.indent3 {padding:0 0 0 6em}
+span.indent4 {padding:0 0 0 8em}
+
+body.comic {width:60%; min-width:600px; max-width:1200px;}
+article.comicPage {display:flex; text-align:center;}
+div.writePageClickable img {width:100%;}
+div.writeNav {width:80%; margin:auto;}
+.writeNav img {width:15%; margin:1em;}
+
+nav:not(.contentList) {display:flex;}
+nav li {padding-right:0.5em;}
+
+nav.contentList li {margin:0.4em 0;}
+
+span.postDate, span.postTag, span.postTitle {display:inline-block;}
+span.postDate {min-width:15%; margin-right:0.4em;}
+span.postTag  {float:right; width:15%; text-align:center; border-radius:0.3em; margin-left:0.4em; background:rgb(30,30,30,0.2);}
