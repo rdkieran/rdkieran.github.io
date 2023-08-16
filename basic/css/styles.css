@@ -1,0 +1,8 @@
+html { font-family:monospace; }
+body { width:60%; max-width:800px; margin:auto; }
+
+header, article, footer { padding:2em; margin: 1em 0; }
+
+div.divider { height:0; width:100%; border-top:solid black 1px; }
+
+p.copyright { font-style:italic; }
