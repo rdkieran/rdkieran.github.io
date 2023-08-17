@@ -9,11 +9,11 @@ keyNav();
 
 function writePageClickable(div,clickable) {
     if (!clickable) {
-        document.querySelector(div).innerHTML = `<div class="currentPage">${writePage()}</div>`;
+        document.querySelector(div).innerHTML = `<div class="currentPageMobile" >${writePage()}</div><div class="currentPageDesktop">${writePage()}</div>`;
     } else if (pg < maxpg) {
-        document.querySelector(div).innerHTML = `<div class="currentPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`;
+        document.querySelector(div).innerHTML = `<div class="currentPageMobile" >${writePage()}</div><div class="currentPageDesktop"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`;
     } else {
-        document.querySelector(div).innerHTML = `<div class="currentPage">${writePage()}</div>`;
+        document.querySelector(div).innerHTML = `<div class="currentPageMobile" >${writePage()}</div><div class="currentPageDesktop">${writePage()}</div>`;
     }
 }
 
@@ -99,7 +99,7 @@ function writeNav(imageToggle) {
 
     function firstButton() {
         if (pg > 1) {
-            return `<a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
+            return `<a class="firstPage" href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 0);
@@ -118,7 +118,7 @@ function writeNav(imageToggle) {
 
     function prevButton() {
         if (pg > 1) {
-            return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
+            return `<a class="previousPage" href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 1);
@@ -130,7 +130,7 @@ function writeNav(imageToggle) {
 
     function nextButton() {
         if (pg < maxpg) {
-            return `<a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
+            return `<a class="nextPage" href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 2);
@@ -142,7 +142,7 @@ function writeNav(imageToggle) {
 
     function lastButton() {
         if (pg < maxpg) {
-            return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
+            return `<a class="lastPage" href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 3);

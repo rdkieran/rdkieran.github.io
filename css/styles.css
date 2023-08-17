@@ -1,4 +1,4 @@
-html {font-family:monospace; color:rgb(30,30,30); font-size:medium;}
+html {font-family:tahoma; color:rgb(30,30,30); font-size:medium;}
 body {max-width:600px; margin:auto;}
 
 header, article, footer {padding:1em 0; margin:1em 0;}
@@ -14,7 +14,7 @@ h1 a {text-decoration:none; color:rgb(30,30,30)}
 div.chapterDivider {height:1em;}
 article.blogPost img {width:100%}
 div.code, article.blogPost img {margin-top:1.2em}
-div.code {border:solid rgb(30,30,30,0.7) 1px; padding:1em; overflow-x:auto; white-space:nowrap;}
+div.code {border:solid rgb(30,30,30,0.7) 1px; padding:1em; overflow-x:auto; white-space:nowrap; font-family:monospace}
 span.indent1 {padding:0 0 0 2em}
 span.indent2 {padding:0 0 0 4em}
 span.indent3 {padding:0 0 0 6em}
@@ -38,15 +38,24 @@ span.postTag  {float:right; width:15%; text-align:center; border-radius:0.3em; m
 
 .ongoing span.postTag {background:rgb(255, 255, 0, 0.4);}
 
+.currentPageMobile  {display:none;}
+.currentPageDesktop {display:block;}
+
 @media screen and (max-width:600px) {
-    body, body.comic {width:calc(100%-2em); min-width:350px; padding:1em; margin:0; margin:auto}
+    body, body.comic {width:calc(100%-2em); min-width:350px; padding:1em; margin:0; margin:auto; touch-action:auto}
 
     .postTag, .postDate {display:none !important}
 
+    a.nextPage:hover {cursor:zoom-in;}
+
     div.writeNav {width:100%}
     .writeNav img {width:15%; margin:0;}
+    #topNav {display:none}
     .rarebitCredit img {width:30%; height:auto;}
 
     figcaption {width:90%; margin:auto;}
     h1, h2  {font-size:125%}
+
+    .currentPageDesktop {display:none;}
+    .currentPageMobile  {display:block;}
 }
