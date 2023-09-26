@@ -42,7 +42,7 @@ function writePage() {
     console.log("page code to insert - " + page);
     console.log("alt text to print - " + altText);
     
-    page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`;
+    page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" class="comicPage"/>`;
     return page;
   } else if (pgData.length >= pg) { 
 
@@ -53,10 +53,10 @@ function writePage() {
       partExtension = imgPart + i.toString();
       path = (folder != "" ? folder + "/" : "") + image + pg + partExtension + "." + ext;
       if (i > 1) {page += `<br/>`}
-      page += `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`; 
+      page += `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" class="comicPage"/>`; 
       }
     } else {
-      page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`;
+      page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" class="comicPage"/>`;
     }
 
     console.log("page code to insert - " + page);
