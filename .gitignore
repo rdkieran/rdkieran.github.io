@@ -18,12 +18,7 @@
 *.psd
 
 # comic
-/img/comics/additional-files
-/img/comics/le/additional-files
-/img/comics/rbd/additional-files
-/img/comics/sds/additional-files
-/img/comics/ss1/additional-files
-/img/comics/ss2/additional-files
+*additional-files
 /img/comics/old-comics
 # blog
 /blog/2023/markdown
