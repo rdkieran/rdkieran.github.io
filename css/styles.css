@@ -40,7 +40,7 @@ span.postTag  {float:right; width:15%; text-align:center; border-radius:0.3em; m
 
 .ongoing span.postTag {background:rgb(255, 255, 0, 0.4);}
 
-div.wikiEntry {min-height:40%}
+div.wikiEntry {min-height:40%; display:none;}
 img.wikiPortrait {float:right; width:30%; min-width:200px; max-width:400px; height:auto; border-radius:15px;}
 
 .currentPageMobile  {display:none;}
