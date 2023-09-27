@@ -23,9 +23,9 @@ span.indent4 {padding:0 0 0 8em}
 body.comic {width:60%; min-width:600px; max-width:1200px;}
 article.comicPage {display:flex; text-align:center;}
 div.writePageClickable img.comicPage {width:100%; margin:auto;}
-.writeNav img {width:10%; max-width:80px;}
-.writeNav img #topNav {margin-top:2em}
-.writeNav img #bottomNav {margin-bottom:2em}
+.writeNav img {width:10%; max-width:70px;}
+.writeNav img #topNav {margin:2em 0}
+#authorNotes {text-align:left;}
 
 .blogPost li {list-style-type:auto}
 
