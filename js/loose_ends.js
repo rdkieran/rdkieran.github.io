@@ -2,7 +2,7 @@
 
 let pg = Number(findGetParameter("pg")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
 
-const maxpg = 37; // UPDATE FOR EACH NEW PAGE
+const maxpg = 38; // UPDATE FOR EACH NEW PAGE
 
 // COMIC PAGE SETTINGS
 const folder = "/img/comics/le"; //comic directory
@@ -40,12 +40,12 @@ if (pg == 0) {pg = 1;} //display FIRST PAGE
 const pgData = [
 //    {
 //        pgNum: 1,
-//        title: "The First Page Title", 
+//        title: "Loose Ends", 
 //        date: writeDate(2021, 3, 16),
 //        altText: "Here's some alt text!", 
 //        imageFiles: 1,
 //        authorNotes: `
-//            <p></p>
+//            <p>Test</p>
 //            `,
 //    },
 ];
