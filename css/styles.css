@@ -51,8 +51,6 @@ img.wikiPortrait {float:right; width:30%; min-width:200px; max-width:400px; heig
 
     .postTag, .postDate {display:none !important}
 
-    a.nextPage:hover {cursor:zoom-in;}
-
     div.writeNav {width:100%}
     .writeNav img {width:15%; margin:0;}
     #topNav {display:none}
