@@ -1,1 +1,0 @@
-The Pity Planets (aka *the Sorry system*) are a collection of planets terraformed by [[The Galactic Federation of Consenting Planets]] and gifted to the population of [[Uplifted Animals]], following their exploitation by [[Human|Humans]] during [[The Humiliation]].
