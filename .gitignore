@@ -17,10 +17,6 @@
 *.pdf
 *.psd
 
-/pawductivity
-/wiki
-/wiki*
-
 # comic
 *additional-files
 /img/comics/old-comics
@@ -30,7 +26,9 @@
 /img/blog/berlin
 /img/index/berlin.png
 # wiki
-/wiki/wiki-markdown
+/wiki
+# project pages
+/pawductivity
 
 # os mode
 #/os
