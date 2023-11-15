@@ -17,6 +17,9 @@
 *.pdf
 *.psd
 
+/pawductivity
+/wiki
+
 # comic
 *additional-files
 /img/comics/old-comics
