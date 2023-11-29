@@ -2,7 +2,7 @@
 
 let pg = Number(findGetParameter("pg")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
 
-const maxpg = 49; // UPDATE FOR EACH NEW PAGE
+const maxpg = 50; // UPDATE FOR EACH NEW PAGE
 
 // COMIC PAGE SETTINGS
 const folder = "/img/comics/ss2"; //comic directory
