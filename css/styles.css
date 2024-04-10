@@ -3,8 +3,6 @@ body {max-width:600px; margin:auto;}
 
 header, article, footer {padding:1em 0; margin:1em 0; border:10px,black;}
 
-div.divider {height:0; width:100%; border-top:solid black 1px;}
-
 li      {list-style:none;}
 a       {color:rgb(30,30,30,0.7); text-decoration:none} 
 a:hover {color:rgb(30, 30, 30); text-decoration:none;}
@@ -13,13 +11,17 @@ h1 a {text-decoration:none; color:rgb(30,30,30)}
 
 article.blogPost img {width:100%}
 div.code, article.blogPost img {margin-top:1.2em}
-div.code {border:solid rgb(30,30,30,0.7) 1px; padding:1em; overflow-x:auto; white-space:nowrap; font-family:monospace}
-span.indent1 {padding:0 0 0 2em}
-span.indent2 {padding:0 0 0 4em}
-span.indent3 {padding:0 0 0 6em}
-span.indent4 {padding:0 0 0 8em}
+figcaption {font-style:italic;color:rgb(30,30,30,0.7);font-size:small;margin-left:5%}
 
-body.comic {width:60%; min-width:600px; max-width:1200px;}
+ol.code {
+    background:rgb(30,30,30,0.2); padding:20px; padding-left:50px; border-radius:20px; margin:2%; 
+    font-family:'Courier New', Courier, monospace; font-size:small;
+}
+span.indent0 {margin-left:0px}
+span.indent1 {margin-left:20px}
+span.indent2 {margin-left:40px}
+
+body.comic {width:60%; min-width:600px; max-width:800px;}
 article.comicPage {display:flex; text-align:center;}
 div.writePageClickable img.comicPage {width:100%; margin:auto;}
 .writeNav img {width:10%; max-width:70px;}
@@ -44,20 +46,3 @@ img.wikiPortrait {float:right; width:30%; min-width:200px; max-width:400px; heig
 
 .currentPageMobile  {display:none;}
 .currentPageDesktop {display:block;}
-
-@media screen and (max-width:600px) {
-    body, body.comic {width:calc(100%-2em); min-width:350px; padding:1em; margin:0; margin:auto; touch-action:auto}
-
-    .postTag, .postDate {display:none !important}
-
-    div.writeNav {width:100%}
-    .writeNav img {width:15%; margin:0;}
-    #topNav {display:none}
-    .rarebitCredit img {width:30%; height:auto;}
-
-    figcaption {width:90%; margin:auto;}
-    h1, h2  {font-size:125%}
-
-    .currentPageDesktop {display:none;}
-    .currentPageMobile  {display:block;}
-}
