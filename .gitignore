@@ -4,7 +4,7 @@
 /-notes
 
 # .md
-*.md
+checklist.md
 # .css
 /css/styles-v*
 # .javascript
@@ -21,7 +21,7 @@
 *additional-files
 /img/comics/old-comics
 # blog
-/blog/2023/markdown
+/blog/2023/markdown/devlog3.html
 /blog/2023/berlin.html
 /img/blog/berlin
 /img/index/berlin.png
