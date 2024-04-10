@@ -11,7 +11,6 @@ a:hover {text-decoration:none;}
 
 h1 a {text-decoration:none; color:rgb(30,30,30)}
 
-div.chapterDivider {height:1em;}
 article.blogPost img {width:100%}
 div.code, article.blogPost img {margin-top:1.2em}
 div.code {border:solid rgb(30,30,30,0.7) 1px; padding:1em; overflow-x:auto; white-space:nowrap; font-family:monospace}
