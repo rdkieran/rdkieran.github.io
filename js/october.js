@@ -1,11 +1,11 @@
-// SPACE STORY I: THE PISS AND SHIT OLYMPICS //
+// OCTOBER //
 
 let pg = Number(findGetParameter("pg")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
 
-const maxpg = 45; // UPDATE FOR EACH NEW PAGE
+const maxpg = 68; // UPDATE FOR EACH NEW PAGE
 
 // COMIC PAGE SETTINGS
-const folder = "/img/comics/le"; //comic directory
+const folder = "/img/comics/oc"; //comic directory
 const image = "pg"; //filename prefix (ie pg1, pg2, etc)
 const imgPart = "_" //special character for multi-file page (ie pg2_1, pg2_2, etc)
 const ext = "png"; //file extension of your comic pages
@@ -40,7 +40,7 @@ if (pg == 0) {pg = 1;} //display FIRST PAGE
 const pgData = [
 //    {
 //        pgNum: 1,
-//        title: "Loose Ends", 
+//        title: "OCtober", 
 //        date: writeDate(2021, 3, 16),
 //        altText: "Here's some alt text!", 
 //        imageFiles: 1,
