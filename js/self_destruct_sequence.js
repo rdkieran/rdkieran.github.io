@@ -1,4 +1,4 @@
-// SPACE STORY I: THE PISS AND SHIT OLYMPICS //
+// SELF-DESTRUCT SEQUENCE //
 
 let pg = Number(findGetParameter("pg")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
 
