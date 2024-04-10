@@ -17,7 +17,7 @@
         <header id="writeHeader"></header>
 
         <article class="blogPost">
-            <h1>Making a Website II: Wrath of World</h1>
+            <h1>Making a Website II: The Wrath of World</h1>
             <p class="publishDate">June 20, 2023</p>
             <img src="/img/blog/making_a_website_ii/header_illustration.png" alt="I'm an apprentice to the mystics of JavaScript now">
 
@@ -61,21 +61,21 @@
                 <img src="/img/blog/making_a_website_i/rarebit.png">
                 <figcaption>&mdash; I used this picture in the first blog too. economical</figcaption>
                 <p>My route to learning JavaScript was mainly this. I scrapped all my CSS and honed my focus in on how JavaScript and HTML worked together. Rarebit is nicely made, extensively commented, but I felt like I could never trust any changes I made unless I could deconstruct the whole thing. I went ahead and made my headers and footers first, seeing how simple the code for that was.</p>
-                <div class="code">
-                    document.addEventListener('DOMContentLoaded', function() {
-                        <br><span class="indent1">document.querySelector(".writeHeader").innerHTML = `</span>
-                        <br><span class="indent1">&lt;div class="bannerImage"&gt;</span>
-                            <br><span class="indent2">&lt;a href="/index.html"&gt;&lt;img src="/img/banner/default.png" alt="banner" /&gt;&lt;/a&gt; </span>
-                        <br><span class="indent1">&lt;/div&gt;</span>
-                        <br><span class="indent1">&lt;nav&gt;</span>
-                            <br><span class="indent2">&lt;a href="/index.html"&gt;home&lt;/a&gt;</span>
-                            <br><span class="indent2">&lt;a href="/about.html"&gt;about&lt;/a&gt;</span>
-                            <br><span class="indent2">&lt;a href="/comics.html"&gt;comics&lt;/a&gt;</span>
-                            <br><span class="indent2">&lt;a href="/blog.html"&gt;blog&lt;/a&gt;</span>
-                        <br><span class="indent1">;&lt;/nav&gt;</span>
-                        <br><span class="indent1">`;</span>
-                    <br>})
-                </div>
+                <ol class="code">
+                    <li><span class="indent0">document.addEventListener('DOMContentLoaded', function() {</li></span>
+                        <li><span class="indent1">document.querySelector(".writeHeader").innerHTML = `</li></span>
+                        <li><span class="indent1">&lt;div class="bannerImage"&gt;</li></span>
+                            <li><span class="indent2">&lt;a href="/index.html"&gt;&lt;img src="/img/banner/default.png" alt="banner" /&gt;&lt;/a&gt;</li></span>
+                        <li><span class="indent1">&lt;/div&gt;</li></span>
+                        <li><span class="indent1">&lt;nav&gt;</li></span>
+                            <li><span class="indent2">&lt;a href="/index.html"&gt;home&lt;/a&gt;</li></span>
+                            <li><span class="indent2">&lt;a href="/about.html"&gt;about&lt;/a&gt;</li></span>
+                            <li><span class="indent2">&lt;a href="/comics.html"&gt;comics&lt;/a&gt;</li></span>
+                            <li><span class="indent2">&lt;a href="/blog.html"&gt;blog&lt;/a&gt;</li></span>
+                        <li><span class="indent1">;&lt;/nav&gt;</li></span>
+                        <li><span class="indent1">`;</li></span>
+                    <li><span class="indent0">})</li></span>
+                </ol>
                 <figcaption class="codeCaption">&mdash; <code>comic_header.js</code></figcaption>
                 <p>I put them together, puzzled over `defer` and `DOMContentLoaded` and tested it out in my browser. It didn't work. Eventually it did. I pushed it to the main branch on my GitHub and went to my new website. It didn't work. So I went back, changed the location of the file in the HTML from its position on my PC directory to what its position *should* be when uploaded. Whenever I wanted to edit and push something, I did this again. Editing the file reference in each file to test, and then changing it back before it went live.</p>
                 <p>My boyfriend noticed this and told me that I can just set up a server for testing on my PC.</p>
@@ -101,6 +101,5 @@
         </article>
 
         <footer id="writeFooter"></footer>
-    </body>
     </body>
 </html>

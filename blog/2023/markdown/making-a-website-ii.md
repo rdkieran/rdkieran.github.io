@@ -1,9 +1,11 @@
-# Making a Website II: Goodbye World
-*May 23, 2023*
+# Making a Website II: The Wrath of World
+
+_May 23, 2023_
 ![](/img/blog/making_a_website_ii/header_illustration.png)
 
 ## Last time on, Making A Website...
-Action! *Drama!**Suspense!!!*
+
+Action! _Drama!\*\*Suspense!!!_
 No. Not really. Looking back now, my first pass at the website was okay. Here's how it was.
 I'd foregone the templates and raised my sails and set out on the open seas of opportunity that only a blank folder can offer. I stripped out all the important bits from my original CV website and did my best to stitch it back together, basically rebuilding it but with better file structure.
 What HTML and CSS I had was good enough for something simple, and I felt like focusing on that, doing my best to put off the inevitable tangle with JavaScript.
@@ -24,7 +26,8 @@ But some things kept holding me back:
 I looked at JavaScript and JavaScript looked at me. "Scrap your Header and Footer tags and humble yourself before me", it said. And I did.
 
 ## Intermission
-How's this so far? Am I giving *drama?* and ***suspense???***
+
+How's this so far? Am I giving _drama?_ and **_suspense???_**
 I've found making this website frustrating, but I don't think I'd have done it any differently if I knew any better. There was this instinct to take the path of least resistance at all times; unwilling to accept that I had to go back to studying.
 
 ![](/img/blog/making_a_website_ii/severance.png)
@@ -42,6 +45,7 @@ So much of the time it takes following my instincts despite my better judgement,
 Anyway, the devlog.
 
 ## Pass me a cup of that JavaScript!!!
+
 And so I sat in the mountain temple of JavaScript, reading its ancient tomes. Documentation from W3Schools and Mozilla and dusty commentaries from the hallowed archives of Stack Overflow (This is a stupid bit).I couldn't help trying to cheat the wisdom of history enshrined in these libraries. As I wandered these halls seeking my answers, the trickster demon ChatGPT followed at my ear, whispering beautiful lies. I could make my website instantly, it said. And when I asked, it pretended not to understand my request.
 I bargained with this demon for a while, until I recognised that, like a genie, the value of your reward matches the quality of your request. I didn't know what the hell I wanted or what to ask for. So I'll put that genie back in the bottle.
 Where was I? Oh yeah. [Rarebit](https://rarebit.neocities.org/). The thing I avoided at the start because it scared me. It was less scary now that I had made peace with the work I had to do.
@@ -50,11 +54,12 @@ Where was I? Oh yeah. [Rarebit](https://rarebit.neocities.org/). The thing I avo
 &mdash; I used this picture in the first blog too. economical
 
 My route to learning JavaScript was mainly this. I scrapped all my CSS and honed my focus in on how JavaScript and HTML worked together. Rarebit is nicely made, extensively commented, but I felt like I could never trust any changes I made unless I could deconstruct the whole thing. I went ahead and made my headers and footers first, seeing how simple the code for that was.
+
 ```
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(".writeHeader").innerHTML = `
     <div class="bannerImage">
-        <a href="/index.html"><img src="/img/banner/default.png" alt="banner"/> 
+        <a href="/index.html"><img src="/img/banner/default.png" alt="banner"/>
     </div>
     <nav>
         <a href="/index.html">home
@@ -65,15 +70,16 @@ document.addEventListener('DOMContentLoaded', function() {
 `;
 })
 ```
+
 &mdash; `comic_header.js`
 
-I put them together, puzzled over `defer` and `DOMContentLoaded` and tested it out in my browser. It didn't work. Eventually it did. I pushed it to the main branch on my GitHub and went to my new website. It didn't work. So I went back, changed the location of the file in the HTML from its position on my PC directory to what its position *should* be when uploaded. Whenever I wanted to edit and push something, I did this again. Editing the file reference in each file to test, and then changing it back before it went live.
+I put them together, puzzled over `defer` and `DOMContentLoaded` and tested it out in my browser. It didn't work. Eventually it did. I pushed it to the main branch on my GitHub and went to my new website. It didn't work. So I went back, changed the location of the file in the HTML from its position on my PC directory to what its position _should_ be when uploaded. Whenever I wanted to edit and push something, I did this again. Editing the file reference in each file to test, and then changing it back before it went live.
 My boyfriend noticed this and told me that I can just set up a server for testing on my PC.
 
 ## Ohhh, okay
 
 ![](/img/blog/making_a_website_ii/localhost.png)
-&mdash; I got this running with help from [this](https://www.hackerearth.com/practice/notes/simple-http-server-in-python/#:~:text=Python%20comes%20with%20a%20built,system%20into%20a%20web%20server) *HackerHealth* article
+&mdash; I got this running with help from [this](https://www.hackerearth.com/practice/notes/simple-http-server-in-python/#:~:text=Python%20comes%20with%20a%20built,system%20into%20a%20web%20server) _HackerHealth_ article
 
 Until now my discussions with JavaScript were stunted by a lack of understanding. Whenever we spoke, it was fraught with riddles and misunderstandings. By which I mean I didn't know that you could use a built in Python command to make the project folder into a server that you can use to test your websites. Once I discovered this arcane secret, all of JavaScript's riddles unraveled into plain speech. The wrinkles in their face, once concealing their disdain for me, relaxed into an plain, open smile.
 Okay, this makes it much easier. Just change the file, save, and refresh it. Silly narrative aside, this was really helpful. And now that I had some command of JavaScript, the air seemed to clear around me. I looked back at Rarebit's intimidating blocks of code, removed the comments to see it in full, and felt a little less intimidated at the prospect of taking this code and adapting it to a website with multiple comics and a blog section. It didn't seem so bad now.
