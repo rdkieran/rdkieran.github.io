@@ -77,10 +77,8 @@ def process_obsidian_folder(folder_path, img_files):
 
         <article class="wiki" id="content">
             <div id="home" class="wikiEntry">
-                <p>Here's all of my rambling Space Story lore that I've written down so far. It's incomprehensible, likely never to be committed to canon. But I like ideas, and I like having them available to read.</p>
-                <p>At some point I may code in some kind of highlighting system to show the articles I actually think of as canon, but for now, nah.</p>
-                <p>PS. Some of these links lead nowhere. I'll fix that later.</p>
-                <p>— Robbie, 20/Apr/2024,</p>
+                <p>Nothing here for now.</p>
+                <p>— Robbie, 20/Apr/2024</p>
                 <h2 class="wikiTitle">List of Articles</h2>
                 <ul class="wikiArticleList">
 """
