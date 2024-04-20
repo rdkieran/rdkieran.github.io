@@ -26,9 +26,12 @@ checklist.md
 /img/blog/berlin
 /img/index/berlin.png
 # wiki
-/wiki/wiki-markdown
+#/wiki/wiki-markdown
 # project pages
 /pawductivity
+
+# excel
+/xl
 
 # os mode
 #/os
