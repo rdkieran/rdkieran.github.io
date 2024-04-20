@@ -65,7 +65,7 @@ def process_obsidian_folder(folder_path, img_files):
         
         <title>Wiki</title>
 
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/styles.css">
 
         <script src="/js/wiki.js"></script>
         
@@ -73,12 +73,10 @@ def process_obsidian_folder(folder_path, img_files):
         <script src="/js/footer.js"></script>
     </head>
     <body>
-        <header class="writeHeader"></header>
+        <header id="writeHeader"></header>
 
         <article class="wiki" id="content">
-            <nav class="wikiNav">wiki navigation: <a href="#home">home</a> | <a href="#characters">characters</a></nav>
             <div id="home" class="wikiEntry">
-                <img src="/img/blog/eternal_october/always-has-been.png"></img>
                 <p>Here's all of my rambling Space Story lore that I've written down so far. It's incomprehensible, likely never to be committed to canon. But I like ideas, and I like having them available to read.</p>
                 <p>At some point I may code in some kind of highlighting system to show the articles I actually think of as canon, but for now, nah.</p>
                 <p>PS. Some of these links lead nowhere. I'll fix that later.</p>
@@ -132,7 +130,7 @@ def process_obsidian_folder(folder_path, img_files):
     html_content += '''
         </article>
 
-        <footer class="writeFooter"></footer>
+        <footer id="writeFooter"></footer>
     </body>
 </html>'''
 
