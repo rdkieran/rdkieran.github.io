@@ -1,57 +1,18 @@
 /venv
 
-# notes
-/-notes
+# wip blogs
+*eternal-october
+*last_summer
 
-# .md
-checklist.md
-# .css
-/css/styles-v*
-# .javascript
-/js/comic_archive.js
-/js/homepage_links.js
-# .python scripts
-/py
-# 
+# additional pages
+/-os
+/-cv
+
+# storage folders
+*-old
+*-wip
+*-working_files
+
+# unwanted file types
 *.clip
-*.pdf
-*.psd
-
-# comic
-*additional-files
-/img/comics/old-comics
-# blog
-/blog/2023/markdown/devlog3.html
-/blog/2023/berlin.html
-/img/blog/berlin
-/img/index/berlin.png
-# wiki
-#/wiki/wiki-markdown
-/wiki/wiki-markdown/unpublished
-# project pages
-/pawductivity
-
-# excel
-/xl
-
-# os mode
-#/os
-/os/test.html
-/os/js/pictureFrame.js
-/os/js/test.js
-/os/js/wiki2.js
-/os/js/windowResize.js
-
-# v1 - dynamic front page and index pages for comics and blog posts
-/-old
-# old assets
-/img/favicon-old.png
-# cv
-/cv
-# rarebit leftovers
-/comics/about.html
-/comics/archive.html
-/comics/characters.html
-img/blog/always_has_been/friendship-ended.jpg
-img/blog/always_has_been/does-he-know.jpg
-css/styles2.css
+*.md
