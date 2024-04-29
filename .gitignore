@@ -4,6 +4,9 @@
 *eternal-october
 *last_summer
 
+# obsidian vault for wiki
+*.obsidian
+
 # additional pages
 /-os
 /-cv
