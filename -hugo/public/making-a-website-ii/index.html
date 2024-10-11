@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://rdkieran.github.io/images/favicon.png" />
+<title>Making a Website II: The Wrath of World | Hugo ʕ•ᴥ•ʔ Bear Blog</title>
+<meta name="title" content="Making a Website II: The Wrath of World" />
+<meta name="description" content="Last time on, Making A Website&hellip; Action! Drama! SUSPENSE!!! No. Not really. Looking back now, my first pass at the website was okay. Here&rsquo;s how it was. I&rsquo;d foregone the templates and raised my sails and set out on the open seas of opportunity that only a blank folder can offer. I stripped out all the important bits from my original CV website and did my best to stitch it back together, basically rebuilding it but with better file structure." />
+<meta name="keywords" content="devlog,website," />
+
+
+<meta property="og:url" content="https://rdkieran.github.io/making-a-website-ii/">
+  <meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear Blog">
+  <meta property="og:title" content="Making a Website II: The Wrath of World">
+  <meta property="og:description" content="Last time on, Making A Website… Action! Drama! SUSPENSE!!! No. Not really. Looking back now, my first pass at the website was okay. Here’s how it was. I’d foregone the templates and raised my sails and set out on the open seas of opportunity that only a blank folder can offer. I stripped out all the important bits from my original CV website and did my best to stitch it back together, basically rebuilding it but with better file structure.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-06-20T13:34:52+01:00">
+    <meta property="article:modified_time" content="2023-06-20T13:34:52+01:00">
+    <meta property="article:tag" content="Devlog">
+    <meta property="article:tag" content="Website">
+    <meta property="og:image" content="https://rdkieran.github.io/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://rdkieran.github.io/images/share.png">
+  <meta name="twitter:title" content="Making a Website II: The Wrath of World">
+  <meta name="twitter:description" content="Last time on, Making A Website… Action! Drama! SUSPENSE!!! No. Not really. Looking back now, my first pass at the website was okay. Here’s how it was. I’d foregone the templates and raised my sails and set out on the open seas of opportunity that only a blank folder can offer. I stripped out all the important bits from my original CV website and did my best to stitch it back together, basically rebuilding it but with better file structure.">
+
+
+
+
+  <meta itemprop="name" content="Making a Website II: The Wrath of World">
+  <meta itemprop="description" content="Last time on, Making A Website… Action! Drama! SUSPENSE!!! No. Not really. Looking back now, my first pass at the website was okay. Here’s how it was. I’d foregone the templates and raised my sails and set out on the open seas of opportunity that only a blank folder can offer. I stripped out all the important bits from my original CV website and did my best to stitch it back together, basically rebuilding it but with better file structure.">
+  <meta itemprop="datePublished" content="2023-06-20T13:34:52+01:00">
+  <meta itemprop="dateModified" content="2023-06-20T13:34:52+01:00">
+  <meta itemprop="wordCount" content="1667">
+  <meta itemprop="image" content="https://rdkieran.github.io/images/share.png">
+  <meta itemprop="keywords" content="Devlog,Website">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Hugo ʕ•ᴥ•ʔ Bear Blog</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Making a Website II: The Wrath of World</h1>
+<p>
+  <i>
+    <time datetime='2023-06-20' pubdate>
+      20 Jun, 2023
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><img src="/images/blog/making-a-website-ii/header_illustration.png" alt=""></p>
+<h2 id="last-time-on-making-a-website">Last time on, Making A Website&hellip;</h2>
+<p>Action! <em>Drama!</em> <em>SUSPENSE!!!</em>
+No. Not really. Looking back now, my first pass at the website was okay. Here&rsquo;s how it was.
+I&rsquo;d foregone the templates and raised my sails and set out on the open seas of opportunity that only a blank folder can offer. I stripped out all the important bits from my original CV website and did my best to stitch it back together, basically rebuilding it but with better file structure.
+What HTML and CSS I had was good enough for something simple, and I felt like focusing on that, doing my best to put off the inevitable tangle with JavaScript.
+I wrote my introductory blog, chucked it on the site and pulled up my CSS to started working the styling&hellip;</p>
+<h2 id="i-cant-believe-i-thought-this-looked-good">I can&rsquo;t believe I thought this looked good</h2>
+<p><img src="/images/blog/making_a_website_ii/first-pass.png" alt="">
+— tyvm Dr. Charles Severance, and <a href="https://www.coursera.org/">Coursera.org</a>&rsquo;s &ldquo;Audit Course&rdquo; option</p>
+<p>The upside to starting from scratch is that it makes me feel really clever remember what DOCTYPE means when I start up some new files. The downside is that I spend hours petting my ego as I rebuild something I already made. I performatively shuffled some files around and neatened up some CSS while I tried not to make eyecontact with JavaScript, watching me as I played with rocks, unwilling to evolve.
+I got the menus and my blog looking as nice as I thought they should. White text with red highlights on an off-black background. My kingdom.
+But some things kept holding me back:</p>
+<ul>
+<li>The headers and footers of every page were hard coded into the HTML, meaning I kept having to copy/paste it to each new file whenever I thought I was done.</li>
+<li>I was meant to have a comics page and there was no way I was going to put up with maintaining over 300 HTML files for each page.</li>
+</ul>
+<p>I looked at JavaScript and JavaScript looked at me. &ldquo;Scrap your Header and Footer tags and humble yourself before me&rdquo;, it said. And I did.</p>
+<h2 id="intermission">Intermission</h2>
+<p>How&rsquo;s this so far? Am I giving <em>drama?</em> and <strong><em>suspense???</em></strong>
+I&rsquo;ve found making this website frustrating, but I don&rsquo;t think I&rsquo;d have done it any differently if I knew any better. There was this instinct to take the path of least resistance at all times; unwilling to accept that I had to go back to studying.</p>
+<p><img src="/images/blog/making_a_website_ii/severance.png" alt="">
+— tyvm Dr. Charles Severance and his <a href="https://www.coursera.org/specializations/python">Python for Everybody</a> course on <a href="https://www.coursera.org/">coursera.org</a>.</p>
+<p>On the 11th of August 2022, I started learning Python. I had been playing with formulas in Google Sheets and thought that if there was a chance I could be good at and enjoy coding, then maybe that would be an easier career path than illustration. Worth a shot at least. And it payed off. I studied a couple hours a week until I got good at it. Wellm actually I studied 11 hours the first week, 9 hours the next 2 weeks, then 6 hours, 2 hours, and 5 hours in the following weeks. Safe to say I enjoyed it. I spent long periods of time playing with concepts from each lesson, getting more complex each time, and taking longer each time.
+At some point it began to plateau. I was coding things for no reason, making little scripts that served no purpose but to stroke my ego. Look at me, I can do a <code>for</code> loop. This was the first time I experienced burnout, expending energy and having nothing to show for it. At this point I decided it was worth looking at other languages.
+So I repeated the process. I did a bunch of lessons, learned the syntax, and went back to VS Code with a renewed sense of purpose. And when I went to write, I had nothing. I had no command of the language, and the joy I had before with Python wasn&rsquo;t there anymore.</p>
+<p><img src="/images/blog/making_a_website_ii/sheets.png" alt="">
+— my productivity spreadsheet made clear my need to study more</p>
+<p>I was discouraged. I set out on my goal to build a website using only HTML and CSS, hoping that I wouldn&rsquo;t have to humble myself and admit that I just needed to study JavaScript properly, like I did Python. Not by reading, but testing things out, playing around. And there I find myself in my first blog, excitedly embarking on my mission to build my website without having to learn anything new. But alas, that&rsquo;s a pain in the ass of a different kind.
+So much of the time it takes following my instincts despite my better judgement, to appreciate the right way of doing things. I don&rsquo;t know why this is my way of learning, but it&rsquo;s probably the same for most people.
+Anyway, the devlog.</p>
+<h2 id="pass-me-a-cup-of-that-javascript">Pass me a cup of that JavaScript!!!</h2>
+<p>And so I sat in the mountain temple of JavaScript, reading its ancient tomes. Documentation from W3Schools and Mozilla and dusty commentaries from the hallowed archives of Stack Overflow (This is a stupid bit).I couldn&rsquo;t help trying to cheat the wisdom of history enshrined in these libraries. As I wandered these halls seeking my answers, the trickster demon ChatGPT followed at my ear, whispering beautiful lies. I could make my website instantly, it said. And when I asked, it pretended not to understand my request.
+I bargained with this demon for a while, until I recognised that, like a genie, the value of your reward matches the quality of your request. I didn&rsquo;t know what the hell I wanted or what to ask for. So I&rsquo;ll put that genie back in the bottle.
+Where was I? Oh yeah. <a href="https://rarebit.neocities.org/">Rarebit</a>. The thing I avoided at the start because it scared me. It was less scary now that I had made peace with the work I had to do.</p>
+<p><img src="/images/blog/making_a_website_i/rarebit.png" alt="">
+— I used this picture in the first blog too. economical</p>
+<p>My route to learning JavaScript was mainly this. I scrapped all my CSS and honed my focus in on how JavaScript and HTML worked together. Rarebit is nicely made, extensively commented, but I felt like I could never trust any changes I made unless I could deconstruct the whole thing. I went ahead and made my headers and footers first, seeing how simple the code for that was.</p>
+<pre tabindex="0"><code>document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    document.querySelector(&#34;.writeHeader&#34;).innerHTML = `
+    &lt;div class=&#34;bannerImage&#34;&gt;
+        &lt;a href=&#34;/index.html&#34;&gt;&lt;img src=&#34;/img/banner/default.png&#34; alt=&#34;banner&#34;/&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+        &lt;a href=&#34;/index.html&#34;&gt;home
+        &lt;a href=&#34;/about.html&#34;&gt;about
+        &lt;a href=&#34;/comics.html&#34;&gt;comics
+        &lt;a href=&#34;/blog.html&#34;&gt;blog
+    &lt;/nav&gt;
+`;
+})
+</code></pre><p>— <code>comic_header.js</code></p>
+<p>I put them together, puzzled over <code>defer</code> and <code>DOMContentLoaded</code> and tested it out in my browser. It didn&rsquo;t work. Eventually it did. I pushed it to the main branch on my GitHub and went to my new website. It didn&rsquo;t work. So I went back, changed the location of the file in the HTML from its position on my PC directory to what its position <em>should</em> be when uploaded. Whenever I wanted to edit and push something, I did this again. Editing the file reference in each file to test, and then changing it back before it went live.
+My boyfriend noticed this and told me that I can just set up a server for testing on my PC.</p>
+<h2 id="ohhh-okay">Ohhh, okay</h2>
+<p><img src="/images/blog/making_a_website_ii/localhost.png" alt="">
+— I got this running with help from <a href="https://www.hackerearth.com/practice/notes/simple-http-server-in-python/#:~:text=Python%20comes%20with%20a%20built,system%20into%20a%20web%20server">this</a> <em>HackerHealth</em> article</p>
+<p>Until now my discussions with JavaScript were stunted by a lack of understanding. Whenever we spoke, it was fraught with riddles and misunderstandings. By which I mean I didn&rsquo;t know that you could use a built in Python command to make the project folder into a server that you can use to test your websites. Once I discovered this arcane secret, all of JavaScript&rsquo;s riddles unraveled into plain speech. The wrinkles in their face, once concealing their disdain for me, relaxed into an plain, open smile.
+Okay, this makes it much easier. Just change the file, save, and refresh it. Silly narrative aside, this was really helpful. And now that I had some command of JavaScript, the air seemed to clear around me. I looked back at Rarebit&rsquo;s intimidating blocks of code, removed the comments to see it in full, and felt a little less intimidated at the prospect of taking this code and adapting it to a website with multiple comics and a blog section. It didn&rsquo;t seem so bad now.</p>
+<p><img src="/images/blog/making_a_website_ii/van-lent.png" alt="">
+— tyvm Colleen van Lent and her <a href="https://www.coursera.org/learn/html">Introduction to HTML5</a> course on <a href="https://www.coursera.org/">coursera.org</a></p>
+<p>First thing, I cleaned out a bit of Rarebit&rsquo;s HTML to use semantic tags rather than a lot of <code>&lt;div&gt;</code> tags with various classes. The course I took put a really heavy emphasis on accessibility, and now I have an irrational fear of <code>&lt;div&gt;</code> tags, like they&rsquo;re some kind of dark art with a terrible price. At the very least, using the built in tags made it much easier to write the CSS, using <code>article {</code> instead of <code>div.article {</code> or whatever.
+I won&rsquo;t go through it in detail, but eventually it was plain sailing. I had just enough of a grasp on things that troubleshooting wasn&rsquo;t so stressful, and I inched toward something that worked. Adding in my content and tweaking the site for smaller screens, I felt like that was it. This is basically done.</p>
+<p><img src="/images/blog/making_a_website_ii/website.png" alt="">
+— my website in the first form I was properly happy with</p>
+<p>Funnily enough, as I look at it now, it wasn&rsquo;t so different from <a href="images%5Cblog%5Cmaking_a_website_i%5Ccarrd.png">my old Carrd site</a>. Oh well, at least people can look at my comics properly now.</p>
+<h2 id="tldr">TL;DR</h2>
+<p>I made a website.</p>
+<p>It&rsquo;s what I wanted, and now I have it. People can read my comics, and I can play around with web dev stuff with it maybe. Right now it lives on GitHub Pages, but I want to host it somewhere like AWS at some point so that I can play with that for my next project.</p>
+<p>Aside from that, I have a comic to keep making, coding to keep learning, and blogs to keep writing. I need to do some kind of write up for my Audio Sequencer project, which I&rsquo;ll also try to find a silly narrative style for.</p>
+<p>Blog End</p>
+
+</content>
+<p>
+  
+  <a href="https://rdkieran.github.io/blog/devlog/">#Devlog</a>
+  
+  <a href="https://rdkieran.github.io/blog/website/">#Website</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
