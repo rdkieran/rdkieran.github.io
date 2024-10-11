@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /venv
+
+/-hugo
 
 # wip blogs
 *eternal-october
@@ -19,3 +22,5 @@
 # unwanted file types
 *.clip
 *.md
+=======
+>>>>>>> 724bf5fd6ad2e86e97abc3657253cf44b366db52
