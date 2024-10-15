@@ -1,26 +1,10 @@
 <<<<<<< HEAD
 /venv
 
-/-hugo
-
-# wip blogs
-*eternal-october
-*last_summer
-
-# obsidian vault for wiki
-*.obsidian
-
-# additional pages
-/-os
-/-cv
-
 # storage folders
 *-old
-*-wip
-*-working_files
 
 # unwanted file types
-*.clip
 *.md
 =======
 >>>>>>> 724bf5fd6ad2e86e97abc3657253cf44b366db52
