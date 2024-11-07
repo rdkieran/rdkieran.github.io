@@ -118,8 +118,8 @@ img.comicLink:hover {
   max-width:80%;
 }
 
+a.blogLink {text-decoration: none;}
 a.blogLink article {
-  text-decoration:none;
   transition: 0.3s;
 }
 a.blogLink article:hover {
