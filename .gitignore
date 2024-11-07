@@ -7,6 +7,8 @@
 # unwanted file types
 *.md
 
-rarebit
+*.clip
+*-unused*
+/rarebit/
 =======
 >>>>>>> 724bf5fd6ad2e86e97abc3657253cf44b366db52

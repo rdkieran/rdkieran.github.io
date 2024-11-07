@@ -7,7 +7,6 @@ document.querySelector(".writeHeader").innerHTML = `
         <div id="nav">
             <a href="/index.html">home</a> |
             <a href="/comics">comics</a> |
-            <a href="/blog">blog</a> |
             <a href="/about">about</a>
         </div>
     </header>

@@ -88,15 +88,54 @@ main .content {
 
 article {
   background-color: #ffffff;
+  color:#353535;
   padding: 15px 30px;
   margin: 20px 0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+article p {
+  margin:10px 0;
+}
+
+hr {
+  border-top:#9a9a9a dotted 2px;
+  margin: 20px
+}
+
+img.comicLink {
+  border-radius:20px;
+  border:#9a9a9a 2px dotted;
+  margin:10px 0;
+  max-width:80%;
+  transition: 0.3s;
+}
+img.comicLink:hover {
+  border-radius:20px;
+  border:#353535 2px solid;
+  margin:10px 0;
+  max-width:80%;
+}
+
+a.blogLink article {
+  text-decoration:none;
+  transition: 0.3s;
+}
+a.blogLink article:hover {
+  color:white;
+  background:#353535;
+}
+
+.updateDate {
+  font-style:italic;
+  color:#9a9a9a;
+  font-size:small;
+  margin-bottom:10px;
+}
+
 .comicLink {
   font-size:large;
-  
 }
 
 footer {
@@ -105,6 +144,11 @@ footer {
   color: #353535;
   border-top:#1e1e1e dotted 2px;
   margin-top: 20px;
+}
+
+.socialsNav img {
+  max-width: 50px;
+  margin: 3px;
 }
 
 /* Responsive styles */
