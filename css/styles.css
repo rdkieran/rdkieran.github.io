@@ -104,18 +104,17 @@ hr {
   margin: 20px
 }
 
-img.comicLink {
-  border-radius:20px;
-  border:#9a9a9a 2px dotted;
-  margin:10px 0;
-  max-width:80%;
-  transition: 0.3s;
+article img {
+  max-width:100%
 }
-img.comicLink:hover {
-  border-radius:20px;
-  border:#353535 2px solid;
-  margin:10px 0;
-  max-width:80%;
+
+a.comicLink {text-decoration: none;}
+a.comicLink article {
+  transition: 0.3s;
+  border: #9a9a9a dotted 3px;
+}
+a.comicLink article:hover {
+  border: #353535 solid 3px;
 }
 
 a.blogLink {text-decoration: none;}
@@ -132,6 +131,11 @@ a.blogLink article:hover {
   color:#9a9a9a;
   font-size:small;
   margin-bottom:10px;
+}
+
+iframe {
+  width:100% ;
+  height:200px;
 }
 
 .comicLink {
@@ -166,6 +170,10 @@ footer {
 
   h1 {
       font-size: 2.5rem;
+  }
+
+  iframe {
+    height:315px;
   }
 }
 
