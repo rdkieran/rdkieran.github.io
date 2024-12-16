@@ -24,6 +24,7 @@ header {
 header img {
   width: 800px;
   max-width: 98%;
+  mix-blend-mode: multiply;
 }
 
 .comicNav {
