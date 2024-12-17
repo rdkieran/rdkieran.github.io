@@ -4,6 +4,7 @@ document.querySelector(".writeFooter").innerHTML = `
     <footer align="center">
         <div class="socialsNav">
             <a href="https://www.patreon.com/rdkieran"><img src="/img/socials/patreon.png" alt="Patreon"></img></a>
+            <a href="https://ko-fi.com/rdkieran"><img src="/img/socials/kofi.png" alt="Ko-Fi"></img></a>
             <a href="https://bsky.app/profile/rdkieran.bsky.social"><img src="/img/socials/bluesky.png" alt="BlueSky"></img></a>
             <a href="https://www.instagram.com/rdkieran/"><img src="/img/socials/instagram.png" alt="Instagram"></img></a>
             <a href="https://github.com/rdkieran"><img src="/img/socials/github.png" alt="GitHub"></img></a>
