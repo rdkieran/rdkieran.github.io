@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Robbie | Wiki</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div align="center" class="writeHeader"></div>
-
-    <article align="left">
-        <p>One day...</p>
-    </article>
+    <h1>Obsidian Wiki</h1>
+    <div id="content">Loading...</div>
     
-    <div align="center" class="writeFooter"></div>
+    <script>
+        const vaultPath = '/wiki/vault'; // Adjust to your setup
+        const defaultFile = 'index.md';
+        const contentDiv = document.getElementById('content');
+        const converter = new showdown.Converter();
 
-    <script src="/js/header.js" defer></script>
-    <script src="/js/footer.js" defer></script>
+        async function loadFile(filename) {
+            try {
+                let response = await fetch(vaultPath + filename);
+                if (!response.ok) throw new Error('File not found');
+                let text = await response.text();
+                renderMarkdown(text);
+            } catch (error) {
+                contentDiv.innerHTML = '<p>Error loading file.</p>';
+            }
+        }
+
+        function renderMarkdown(mdText) {
+            let html = converter.makeHtml(mdText);
+            html = html.replace(/\[\[(.*?)\]\]/g, (match, p1) => `<a onclick="loadFile('${p1}.md')">${p1}</a>`);
+            contentDiv.innerHTML = html;
+        }
+
+        window.onload = () => loadFile(defaultFile);
+    </script>
 </body>
 </html>
